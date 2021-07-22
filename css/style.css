@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+  font-family: "Roboto bold", sans-serif;
 }
 /*************************HEADER******************************************/
 header {
@@ -38,56 +40,76 @@ nav ul li a {
   font-weight: bold;
   color: #fff;
   padding: 5px;
+  display: inline-block;
 }
 /********************   INICIO *************************************************************/
 #inicio {
-  height: 1400px;
+  height: 1900px;
+}
+.banner {
+  background-image: url(../img/diferentes-razas.jpg);
+  height: 480px;
+  background-position: bottom;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .text-01 article {
-  width: 55%;
+  width: 46%;
   float: left;
-  margin-bottom: 40px;
 }
 .text-01 article h2 {
   text-align: center;
-  font-size: 38px;
+  font-size: 34px;
   color: rgb(116, 61, 179);
+  margin-top: 80px;
 }
 .text-01 article p {
   padding: 5px 5px;
-  font-size: 20px;
-  margin-left: 60px;
+  font-size: 18px;
+  margin-left: 40px;
   color: rgb(116, 61, 179);
+  word-spacing: 2px;
+  line-height: 30px;
+}
+.boxer {
+  background-image: url(../img/img-boxer.jpg);
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  margin-left: 50%;
 }
 #inicio img {
   width: 45%;
   float: right;
   height: 45%;
 }
-.img-01 {
-  background-image: url(/img/huesitos.jpg);
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .text-02 article {
   width: 50%;
   float: right;
-
-  margin-top: -650px;
+  margin-top: 80px;
 }
 .text-02 article h2,
 p {
   text-align: center;
   color: rgb(116, 61, 179);
+  font-style: italic;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin: 0px 40px;
+  font-style: italic;
 }
 .img-02 {
-  width: 100%;
-  height: 100%;
-  margin-left: -760px;
+  background-image: url(../img/peritos.jpg);
+  height: 500px;
+  width: 50%;
+  background-size: cover;
+  float: left;
 }
+
 /*************************** FOOTER **************************************************/
 
 .pie {
@@ -135,7 +157,33 @@ p {
 #nosotros img {
   width: 30%;
   height: 30%;
-  margin-left: 970px;
+  margin-left: 1000px;
+}
+.nosotros-info {
+  width: 60%;
+  margin-top: -580px;
+}
+.nosotros-info p {
+  text-align: left;
+  line-height: 30px;
+  margin-left: 60px;
+
+  text-transform: uppercase;
+}
+.nosotros-info h2 {
+  text-align: center;
+  color: rgb(111, 41, 190);
+}
+.img-logo {
+  background-image: url(/img/marca.jpg);
+  height: 380px;
+  background-size: cover;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.linea {
+  margin-left: 60px;
+  border: solid rgb(111, 41, 190);
 }
 #formulario {
   height: 500px;
@@ -144,11 +192,14 @@ p {
   padding: 3rem 0;
   width: 50%;
   height: 400px;
-  margin-top: -600px;
 }
 
 .formulario {
   margin-left: 80px;
+}
+.formulario h2 {
+  color: rgb(98, 19, 172);
+  margin-bottom: 20px;
 }
 .formulario label {
   font-weight: bold;
@@ -174,7 +225,9 @@ p {
 #videos {
   height: 300px;
 }
-
+#videos h2 {
+  font-style: italic;
+}
 .audio {
   height: 200px;
   float: left;
@@ -220,4 +273,9 @@ p {
 }
 #accesorios img {
   width: 100%;
+}
+.acc-in {
+  background-image: url(/img/fondoAcc.jpg);
+  height: 500px;
+  background-size: cover;
 }

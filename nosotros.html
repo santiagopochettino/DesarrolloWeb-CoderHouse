@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -29,16 +32,32 @@
          <div class="img-nos">
              <img src="/img/img-dogsilla.jpg" alt="perro en silla">
          </div>
+         <div class="nosotros-info">
+            <div class="img-logo">
+            </div>
+            <h2>Nosotros</h2>
+            <hr class="linea"/>
+            <p>Av. Juan José Paso 2502, Mar del Plata (7600) Buenos Aires, Argentina</p>
+            <p> Tel: (0223) 491 6611 </p>
+            <p>veterinariapochettino91@gmail.com</p>
+            <p>Horario: De Lunes a Sabado 09:30 a 13Hs</p>
+            <hr class="linea"/>
+            <p>DESDE 1991 </p>
+            <p>30 AÑOS DE TRAYECTORIA</p>
+        </div>
+
+
      </section>
      <section id="formulario" >
          <div class="formulario">
+             <h2>El formulario despues sera un modal que se toca desde el navbar</h2>
             <form action="" method="POST" >
                 <label for="nombre">Nombre y Apellido:</label><br/>
                 <input name="nombre" type="text" placeholder="Escriba su Nombre y Apellido..." required ><br/>
                 <label for="mascota">Nombre de su mascota:</label><br/>
-                <input type="text" placeholder="Escriba el nombre de su mascota..." required ><br/>
+                <input type="text" name="mascota" placeholder="Escriba el nombre de su mascota..."  required ><br/>
                 <label for="telefono">Telefono:</label><br/>
-                <input  type="number" name="telefono" placeholder="Escriba su numero telefonico..." required >
+                <input  type="text" name="telefono" placeholder="Escriba su numero telefonico..." required >
                 <div>
                    <input type="checkbox" name="canino" id="canino">
                    <label for="raza">Canino</label>
