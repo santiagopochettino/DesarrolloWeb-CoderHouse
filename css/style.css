@@ -8,28 +8,27 @@ html {
 }
 /*************************HEADER******************************************/
 header {
-  height: 90px;
+  height: 20hv;
   width: 100%;
   background-color: rgb(183, 144, 228);
   position: fixed;
   z-index: 2000;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
 }
-/********************* BODY ***************************************************/
 
 /*********************************** NAV BAR*************************************/
 .logo {
   width: 12%;
-  margin-left: 60px;
-  padding-top: 8px;
-  float: left;
+}
+picture a {
+  text-decoration: none;
   color: #fff;
-  text-align: center;
 }
 /**************************** Barra de navegacion *********************************/
-nav {
-  margin-left: 600px;
-  margin-top: 40px;
-}
+
 nav ul {
   list-style: none;
 }
@@ -74,33 +73,39 @@ nav > ul > li {
 /*segundo nivel**************/
 nav li li {
   background: rgb(183, 144, 228);
-  top: 18px;
+  top: 20px;
 }
 nav li li:hover {
   background: rgb(161, 122, 206);
 }
 /********************   INICIO *************************************************************/
 #inicio {
-  height: 1900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.banner {
-  background-image: url(../img/diferentes-razas.jpg);
-  height: 480px;
-  background-position: bottom;
 
+#inicio main {
+  height: 278vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  background-image: url(../img/fondo-in.jpg);
+  height: 500px;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.text-01 article {
-  width: 46%;
-  position: relative;
+.text-01 {
+  display: flex;
 }
 .text-01 article h2 {
   text-align: center;
   font-size: 34px;
   color: rgb(116, 61, 179);
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .text-01 article p {
   padding: 5px 5px;
@@ -110,22 +115,8 @@ nav li li:hover {
   word-spacing: 2px;
   line-height: 30px;
 }
-.boxer {
-  background-image: url(../img/img-boxer.jpg);
-  height: 900px;
-  background-size: cover;
-  background-position: center;
-  width: 50%;
-  position: relative;
-  left: 700px;
-  bottom: 700px;
-}
-.text-02 article {
-  width: 50%;
-  margin-top: 80px;
-  bottom: 1175px;
-  left: 750px;
-  position: relative;
+.text-02 {
+  display: flex;
 }
 .text-02 article h2 {
   padding-bottom: 20px;
@@ -140,24 +131,16 @@ p {
   margin: 0px 40px;
   font-style: italic;
 }
-.img-02 {
-  background-image: url(../img/peritos.jpg);
-  height: 500px;
-  width: 50%;
-  background-size: cover;
-  background-position: right;
-  position: relative;
-  bottom: 690px;
-}
 
 /*************************** FOOTER **************************************************/
 
 .pie {
   background-color: rgb(192, 178, 178);
   height: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .pie p {
-  text-align: center;
   padding-top: 15px;
   font-size: 14px;
 }
@@ -224,48 +207,56 @@ p {
   color: #fff;
 }
 /************************ ACCESORIOS.HTML ********************************************/
-#accesorios {
-  height: 440px;
-}
 
 .acc-banner {
   background-image: url(/img/fondoAcc.jpg);
   height: 400px;
   background-size: cover;
 }
+
 .acc-texts {
-  width: 60%;
+  display: flex;
+  align-items: center;
 }
 .acc-texts p {
-  text-align: left;
+  text-align: center;
 }
 .acc-texts h2 {
-  text-align: left;
+  text-align: center;
   margin-left: 60px;
+  margin-top: 50px;
   color: rgb(116, 61, 179);
+}
+#colchonetas img {
+  max-width: 250px;
+}
+.juguetes {
+  margin-top: 100px;
 }
 /*************************** PELUQUERIA.HTML  **********************************/
 #peluqueria {
   height: 690px;
 }
 #peluqueria img {
-  width: 30%;
-  height: 30%;
+  max-width: 500px;
   margin-left: 60px;
 }
 .pelu-text {
-  width: 60%;
-  position: relative;
-  left: 580px;
-  bottom: 500px;
+  display: flex;
+  align-items: center;
 }
 .pelu-text h2 {
   text-align: center;
   margin-bottom: 10px;
   color: rgb(98, 19, 172);
 }
+.cortes {
+}
 .antes-despues {
-  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  height: 45vh;
+  margin-left: 60px;
 }
 .antes-despues p {
   text-align: left;
