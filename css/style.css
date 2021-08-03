@@ -50,7 +50,7 @@ nav ul li ul {
   display: none;
 }
 nav ul li:hover ul {
-  display: block;
+  /* display: block;*/
   width: 200px;
 }
 /******primer nivel*************/
@@ -90,7 +90,7 @@ nav li li:hover {
 
 .text-01 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
   gap: 1em;
   align-items: center;
 }
@@ -110,7 +110,7 @@ nav li li:hover {
 }
 .text-02 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
   gap: 1em;
   align-items: center;
 }
@@ -133,8 +133,6 @@ p {
 .pie {
   background-color: rgb(192, 178, 178);
   height: 50px;
-  display: grid;
-  flex-direction: column;
 }
 .pie p {
   padding-top: 15px;
@@ -326,68 +324,25 @@ p {
   padding-bottom: 15px;
 }
 /****************** Responsive **************************************/
-@media all and (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 1100px) {
   /********************   INICIO *************************************************************/
-  #inicio {
-    display: grid;
-
-    gap: 1em;
-  }
   .banner {
-    height: 250px;
-    margin-top: 80px;
+    margin-top: 90px;
+    height: 300px;
+    background-position: center;
+  }
+  .img-in-01 {
+    margin-left: 70px;
   }
 
   .text-01 {
-    display: grid;
-    grid-template-rows: none;
-    gap: 1em;
-    align-items: center;
+    grid-auto-flow: row;
   }
-  .text-01 article h2 {
-    text-align: center;
-    font-size: 34px;
-    color: rgb(116, 61, 179);
-    margin-top: 60px;
-  }
-  .text-01 article p {
-    padding: 5px 5px;
-    font-size: 18px;
-    margin-left: 40px;
-    color: rgb(116, 61, 179);
-    word-spacing: 2px;
-    line-height: 30px;
+
+  .img-in-02 {
+    margin-left: 70px;
   }
   .text-02 {
-    display: grid;
-    grid-template-columns: repeat(0, 1fr);
-    gap: 1em;
-    align-items: center;
-  }
-  .text-02 article h2 {
-    padding-bottom: 20px;
-  }
-  .text-02 article h2,
-  p {
-    text-align: center;
-    color: rgb(116, 61, 179);
-    font-style: italic;
-    line-height: 30px;
-    letter-spacing: 1px;
-    margin: 0px 40px;
-    font-style: italic;
-  }
-
-  /*************************** FOOTER **************************************************/
-
-  .pie {
-    background-color: rgb(192, 178, 178);
-    height: 50px;
-    display: grid;
-    flex-direction: column;
-  }
-  .pie p {
-    padding-top: 15px;
-    font-size: 14px;
+    grid-auto-flow: row;
   }
 }
