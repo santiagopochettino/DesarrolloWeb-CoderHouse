@@ -10,7 +10,13 @@ html {
 header {
   height: 20hv;
   width: 100%;
-  background-color: rgb(183, 144, 228);
+  background-image: linear-gradient(
+    to bottom,
+    #822bd8 25%,
+    #8e22d6 50%,
+    #d875c1 91%
+  );
+
   position: fixed;
   z-index: 2000;
   display: grid;
@@ -22,10 +28,15 @@ header {
   width: 15%;
   margin-left: 60px;
 }
+.logo:hover {
+  transform: scale(1.5, 1);
+  transition: ease 1s;
+}
 picture a {
   text-decoration: none;
   color: #fff;
 }
+
 /**************************** Barra de navegacion *********************************/
 
 nav ul {
@@ -45,6 +56,11 @@ nav ul li a {
   font-weight: bold;
   padding: 0 1.5rem;
   text-align: center;
+}
+nav ul li a:hover {
+  background-color: #fff;
+  color: #8e22d6;
+  border-radius: 5px;
 }
 nav ul li ul {
   display: none;
@@ -86,6 +102,8 @@ nav li li:hover {
   background-image: url(/img/banner-in.jpg);
   height: 400px;
   background-size: cover;
+
+  margin-top: 80px;
 }
 
 .text-01 {
@@ -98,7 +116,15 @@ nav li li:hover {
   text-align: center;
   font-size: 34px;
   color: rgb(116, 61, 179);
-  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.text-01 article:hover {
+  transform: rotate(12deg);
+  transition: ease 2s;
+}
+.treinta {
+  font-weight: bold;
+  font-size: x-large;
 }
 .text-01 article p {
   padding: 5px 5px;
@@ -131,12 +157,13 @@ p {
 /*************************** FOOTER **************************************************/
 
 .pie {
-  background-color: rgb(192, 178, 178);
+  background-image: linear-gradient(rgb(192, 178, 178), #fff, black);
   height: 50px;
 }
 .pie p {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 14px;
+  color: rgb(77, 75, 75);
 }
 /*************************  CLINICA.HTML ********************************/
 #clinica {
@@ -171,6 +198,15 @@ p {
   text-align: center;
   padding-bottom: 20px;
   font-size: 35px;
+  animation: animacion 2s linear 1s infinite;
+}
+@keyframes animacion {
+  from {
+    transform: scale(1, 2);
+  }
+  to {
+    transform: scale(2, 3);
+  }
 }
 /************************ ALIMENTACION ***************************************************/
 #aliment-in {
@@ -290,6 +326,10 @@ p {
   background-size: cover;
   margin-left: 60px;
   margin-bottom: 20px;
+}
+.nosotros-info:hover {
+  transform: skew(5deg, 10deg);
+  transition: ease 1s;
 }
 .linea {
   margin-left: 60px;
