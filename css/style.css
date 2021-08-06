@@ -19,9 +19,9 @@ header {
 
   position: fixed;
   z-index: 2000;
-  display: grid;
-  grid-template-areas: "logo nav";
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 /*********************************** NAV BAR*************************************/
 .logo {
@@ -71,7 +71,6 @@ nav ul li:hover ul {
 }
 /******primer nivel*************/
 nav > ul {
-  background: rgb(183, 144, 228);
   display: table;
   text-decoration: none;
   color: #fff;
@@ -95,63 +94,45 @@ nav li li:hover {
 }
 /********************   INICIO *************************************************************/
 #inicio {
-  display: grid;
+  display: flex;
+  flex-flow: column wrap;
   gap: 1em;
 }
 .banner {
   background-image: url(/img/banner-in.jpg);
   height: 400px;
   background-size: cover;
-
+  background-position: center;
+  width: 100%;
   margin-top: 80px;
 }
-
-.text-01 {
-  display: grid;
-  grid-auto-flow: column;
+.imagenes-inicio {
+  justify-content: center;
+}
+.text-inicio {
+  display: flex;
   gap: 1em;
   align-items: center;
 }
-.text-01 article h2 {
+
+.text-inicio h2 {
   text-align: center;
   font-size: 34px;
   color: rgb(116, 61, 179);
   margin-bottom: 20px;
 }
-.text-01 article:hover {
-  transform: rotate(12deg);
-  transition: ease 2s;
-}
+
 .treinta {
   font-weight: bold;
   font-size: x-large;
 }
-.text-01 article p {
+.text-inicio p {
   padding: 5px 5px;
   font-size: 18px;
   margin-left: 40px;
   color: rgb(116, 61, 179);
   word-spacing: 2px;
   line-height: 30px;
-}
-.text-02 {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1em;
-  align-items: center;
-}
-.text-02 article h2 {
-  padding-bottom: 20px;
-}
-.text-02 article h2,
-p {
-  text-align: center;
-  color: rgb(116, 61, 179);
-  font-style: italic;
-  line-height: 30px;
-  letter-spacing: 1px;
-  margin: 0px 40px;
-  font-style: italic;
 }
 
 /*************************** FOOTER **************************************************/
@@ -164,50 +145,38 @@ p {
   padding-top: 10px;
   font-size: 14px;
   color: rgb(77, 75, 75);
+  text-align: center;
 }
 /*************************  CLINICA.HTML ********************************/
-#clinica {
-  height: 500px;
-}
-#clinica img {
-  width: 50%;
-  margin-top: 30px;
-}
-#clinica-info {
-  height: 500px;
-}
-#clinica-info h2 {
-  font-style: italic;
-}
+
 .banner-clinic {
+  display: flex;
   background-image: url(/img/img-curita.jpg);
   height: 300px;
   background-size: cover;
   background-position: top;
-  position: relative;
+}
+.clinica-in {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.clinica-in img {
+  justify-content: center;
+
+  height: 60vh;
 }
 
 .text-cli {
-  width: 50%;
-  position: relative;
   color: darkorchid;
-  left: 760px;
-  bottom: 100px;
+  text-align: center;
 }
 .text-cli h2 {
   text-align: center;
   padding-bottom: 20px;
   font-size: 35px;
-  animation: animacion 2s linear 1s infinite;
 }
-@keyframes animacion {
-  from {
-    transform: scale(1, 2);
-  }
-  to {
-    transform: scale(2, 3);
-  }
-}
+
 /************************ ALIMENTACION ***************************************************/
 #aliment-in {
   height: 350px;
@@ -364,25 +333,38 @@ p {
   padding-bottom: 15px;
 }
 /****************** Responsive **************************************/
-@media (max-width: 1100px) {
+@media all and (max-width: 768px) {
+  /***** header *****/
+  nav {
+    display: flex;
+    margin-left: 20px;
+    flex-flow: row wrap;
+  }
   /********************   INICIO *************************************************************/
+  #inicio {
+    flex-flow: row wrap;
+  }
   .banner {
     margin-top: 90px;
-    height: 300px;
-    background-position: center;
   }
-  .img-in-01 {
+  .imagenes-inicio {
     margin-left: 70px;
   }
-
-  .text-01 {
-    grid-auto-flow: row;
+  .text-inicio {
+    flex-flow: row wrap;
+  }
+  /*************************  CLINICA.HTML ********************************/
+  .clinica-in {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .clinica-in img {
+    height: 20vh;
   }
 
-  .img-in-02 {
-    margin-left: 70px;
+  .text-cli {
+    margin: 20px;
   }
-  .text-02 {
-    grid-auto-flow: row;
-  }
-}
+} /***hasta aca llega el responsive 768px*/
+@media all and(max-width:425px) {
+} /*****************hasta aca llega el resp 320px ************************/
