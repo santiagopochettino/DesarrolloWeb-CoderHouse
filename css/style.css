@@ -282,7 +282,7 @@ nav li li:hover {
   text-align: left;
   line-height: 30px;
   margin-left: 60px;
-
+  color: rgb(111, 41, 190);
   text-transform: uppercase;
 }
 .nosotros-info h2 {
@@ -295,10 +295,6 @@ nav li li:hover {
   background-size: cover;
   margin-left: 60px;
   margin-bottom: 20px;
-}
-.nosotros-info:hover {
-  transform: skew(5deg, 10deg);
-  transition: ease 1s;
 }
 .linea {
   margin-left: 60px;
