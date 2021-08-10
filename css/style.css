@@ -23,14 +23,17 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.bg-light {
+  --bs-bg-opacity: 0;
+}
 /*********************************** NAV BAR*************************************/
 .logo {
-  width: 15%;
   margin-left: 60px;
 }
-.logo:hover {
-  transform: scale(1.5, 1);
+.logo h1:hover {
+  transform: scale(1.2, 1);
   transition: ease 1s;
+  color: #fff;
 }
 picture a {
   text-decoration: none;
@@ -57,7 +60,36 @@ nav ul li a {
   padding: 0 1.5rem;
   text-align: center;
 }
+.contacto-n {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: none;
+  text-align: center;
+}
+/***bootstrap**/
+.navbar-nav {
+  margin-left: 150px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #8e22d6;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff !important;
+}
+
+/****fin bootstrap*/
 nav ul li a:hover {
+  background-color: #fff;
+  color: #8e22d6;
+  border-radius: 5px;
+}
+.contacto-n:hover {
   background-color: #fff;
   color: #8e22d6;
   border-radius: 5px;
@@ -300,26 +332,15 @@ nav li li:hover {
   margin-left: 60px;
   border: solid rgb(111, 41, 190);
 }
-#formulario {
-  height: 500px;
+/*modal */
+.modal {
+  margin-top: 35px;
 }
-.formulario {
-  padding: 3rem 0;
-  width: 50%;
-  height: 400px;
+.modal-body label {
+  font-weight: bold;
 }
 
-.formulario {
-  margin-left: 80px;
-}
-.formulario h2 {
-  color: rgb(98, 19, 172);
-  margin-bottom: 20px;
-}
-.formulario label {
-  font-weight: bold;
-  color: rgb(98, 19, 172);
-}
+/**fin modal**/
 #ubicacion {
   height: 600px;
 }
