@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://kit.fontawesome.com/f971dd6960.js" crossorigin="anonymous"></script>
     
     
 </head>
@@ -85,33 +86,68 @@
 
    </header>
    <main> 
+    <div id="mygalery" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mygalery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mygalery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mygalery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/perrito-car1.jpg" class="d-block img-fluid"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/perrito-car2.jpg" class="d-block img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/perrito-car3.jpg" class="d-block img-fluid " alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mygalery" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mygalery" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
        <section id="inicio">
            <div class="banner">
               
            </div>
-           <div class="text-inicio">
-                <article>
-                <h2>Desde 1991, dedicados a la salud de las mascotas</h2>
-                <p>Nace como empresa familiar, a cargo de <strong>Luis Fernando Pochettino M.V.</strong> , egresado de la facultad de ciencias veterinarias de la universidad nacional de La Plata, en el año 1985, quien ha realizado múltiples cursos y jornadas de capacitación en clínica y cirugía de pequeños animales dentro y fuera del país.</p>
-                <p>La <strong>experiencia</strong>  adquirida en el transcurso de estos <span class="treinta">30 años</span>, nos permite resolver y dar un mejor servicio de manera integral a nuestros clientes, dando vital importancia a la <strong>prevención y diagnostico</strong> de las enfermedades.</p>
-                </article>
-            
-            <div class="img-in-01 imagenes-inicio" >
-                <img src="/img/in-img01.jpg"  alt="perrito feliz">
-            </div>
-           </div>
-            <div class="text-inicio">
-            <div class="img-in-02 imagenes-inicio">
-                <img src="/img/perritos.jpg" alt="">
-            </div>
+         
+       </section>   
+       <section class="seccion1" >
+        <div class="text-inicio">
+          <article>
+            <h2>Desde 1991, dedicados a la salud de las mascotas</h2>
+            <p>Nace como empresa familiar, a cargo de <strong>Luis Fernando Pochettino M.V.</strong> , egresado de la facultad de ciencias veterinarias de la universidad nacional de La Plata, en el año 1985, quien ha realizado múltiples cursos y jornadas de capacitación en clínica y cirugía de pequeños animales dentro y fuera del país.</p>
+            <p>La <strong>experiencia</strong>  adquirida en el transcurso de estos <span class="treinta">30 años</span>, nos permite resolver y dar un mejor servicio de manera integral a nuestros clientes, dando vital importancia a la <strong>prevención y diagnostico</strong> de las enfermedades.</p>
+          </article>
+      
+          <div class="img-in-01 imagenes-inicio imgs" >
+              
+          </div>
+        </div>
 
-           <article>
+        </section>
+          
+         <section class="seccion2">
+          <div class="text-inicio">
+            <div class="img-in-02 imagenes-inicio">
+                
+            </div>
+          <article>
             <h2>Titulo 02</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatem ut placeat repudiandae nobis necessitatibus accusantium error ipsa, inventore non adipisci earum quasi magnam ducimus dicta aut delectus odit nostrum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt repudiandae voluptatibus sunt itaque sit dicta consectetur doloribus! Quam doloremque modi aperiam eveniet distinctio molestiae hic fugit natus ipsa. Dolorum.</p>
            </article>    
-            </div>
-       </section>
+          </div>
+
+         </section>
+      
         <!-- Modal -->
   <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
@@ -172,16 +208,15 @@
     </div>
   </div>
        <!--inicio de redes sociales-->
-<!--
+
     <div class="redes-sociales" >
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            
+            <li><a href="tel:+54 9 2234 91-6611"  target="_blank"><i class="fas fa-phone-alt"></i></a></li>
+            <li><a href="http://www.instagram.com/pochettino.vet"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=54 9 2236 80-1989" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
         </ul>
     </div>
--->
+
 <!--Fin de redes sociales-->
        
    </main>

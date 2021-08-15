@@ -30,12 +30,12 @@ header {
 .logo {
   margin-left: 60px;
 }
-.logo h1:hover {
-  transform: scale(1.2, 1);
-  transition: ease 1s;
+
+picture a {
+  text-decoration: none;
   color: #fff;
 }
-picture a {
+picture a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -70,7 +70,7 @@ nav ul li a {
 }
 /***bootstrap**/
 .navbar-nav {
-  margin-left: 150px;
+  margin-left: 0px;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
@@ -82,7 +82,21 @@ nav ul li a {
 .navbar-light .navbar-nav .show > .nav-link {
   color: #fff !important;
 }
-
+.nav-link {
+  margin: 15px 15px;
+}
+.nav-item button {
+  padding-top: 10px;
+}
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+dl,
+ol,
+ul {
+  margin-bottom: 0rem;
+}
 /****fin bootstrap*/
 nav ul li a:hover {
   background-color: #fff;
@@ -141,10 +155,26 @@ nav li li:hover {
 .imagenes-inicio {
   justify-content: center;
 }
+
 .text-inicio {
   display: flex;
   gap: 1em;
   align-items: center;
+  margin: 5px 20px;
+}
+.img-in-01 {
+  background-image: url(/img/in-img01.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.img-in-02 {
+  background-image: url(/img/perritos.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 
 .text-inicio h2 {
@@ -166,7 +196,37 @@ nav li li:hover {
   word-spacing: 2px;
   line-height: 30px;
 }
+/**********Social*********************************************************/
+.redes-sociales {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  z-index: 1000;
+}
+.redes-sociales ul {
+  padding-left: 0;
+  list-style: none;
+}
 
+.redes-sociales ul li a {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(to right, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
+  padding: 20px 10px;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px #00000029;
+  opacity: 1;
+  font-size: 35px;
+}
+.fa-phone-alt {
+  font-size: 2.2rem;
+}
+.fa-instagram {
+  font-size: 2.5rem;
+}
+.fa-whatsapp {
+  font-size: 2.5rem;
+}
 /*************************** FOOTER **************************************************/
 
 .pie {
@@ -334,7 +394,7 @@ nav li li:hover {
 }
 /*modal */
 .modal {
-  margin-top: 35px;
+  margin-top: 60px;
 }
 .modal-body label {
   font-weight: bold;
@@ -348,6 +408,13 @@ nav li li:hover {
   text-align: center;
   font-size: 38px;
   padding-bottom: 15px;
+}
+/*************************Carousel*************************************************/
+.carousel-inner {
+  height: 90vh;
+}
+.carousel-item {
+  height: 100%;
 }
 /****************** Responsive **************************************/
 @media all and (max-width: 768px) {
@@ -364,9 +431,7 @@ nav li li:hover {
   .banner {
     margin-top: 90px;
   }
-  .imagenes-inicio {
-    margin-left: 70px;
-  }
+
   .text-inicio {
     flex-flow: row wrap;
   }
@@ -384,4 +449,11 @@ nav li li:hover {
   }
 } /***hasta aca llega el responsive 768px*/
 @media all and(max-width:425px) {
-} /*****************hasta aca llega el resp 320px ************************/
+  /*********************************** NAV BAR*************************************/
+  .logo a h1 {
+    margin-left: 0px;
+  }
+  .navbar-nav {
+    margin-left: 0;
+  }
+} /*****************hasta aca llega el resp 425px ************************/
