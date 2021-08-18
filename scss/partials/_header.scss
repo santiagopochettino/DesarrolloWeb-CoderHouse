@@ -1,0 +1,64 @@
+//          HEADER
+header {
+  height: 25hv;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #822bd8 25%,
+    #8e22d6 50%,
+    #d875c1 91%
+  );
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  picture {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  picture {
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  nav {
+    ul {
+      list-style: none;
+      li {
+        line-height: 2rem;
+        position: relative;
+        a {
+          text-decoration: none;
+          color: #fff;
+          display: block;
+          font-weight: bold;
+          padding: 0 1.5rem;
+          text-align: center;
+        }
+        a:hover {
+          background-color: #fff;
+          color: #8e22d6;
+          border-radius: 5px;
+        }
+      }
+      .contacto-nav {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        padding: none;
+        text-align: center;
+      }
+      .contacto-nav:hover {
+        background-color: #fff;
+        color: #8e22d6;
+        border-radius: 5px;
+      }
+    }
+  }
+}

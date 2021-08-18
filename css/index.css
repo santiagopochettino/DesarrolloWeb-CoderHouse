@@ -1,0 +1,698 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Roboto bold", sans-serif; }
+
+header {
+  height: 25hv;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #822bd8 25%, #8e22d6 50%, #d875c1 91%);
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header picture a {
+    text-decoration: none;
+    color: #fff; }
+  header picture a:hover {
+    text-decoration: none;
+    color: #fff; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      line-height: 2rem;
+      position: relative; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        padding: 0 1.5rem;
+        text-align: center; }
+      header nav ul li a:hover {
+        background-color: #fff;
+        color: #8e22d6;
+        border-radius: 5px; }
+    header nav ul .contacto-nav {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      padding: none;
+      text-align: center; }
+    header nav ul .contacto-nav:hover {
+      background-color: #fff;
+      color: #8e22d6;
+      border-radius: 5px; }
+
+.footer__div {
+  background-image: linear-gradient(#c0b2b2, #fff, black);
+  height: 50px; }
+  .footer__div .footer__parrafo {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #4d4b4b;
+    text-align: center; }
+
+.inicio {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em; }
+  .inicio .inicio__banner {
+    background-image: url(/img/banner-in.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 55px; }
+
+.seccion .seccion__text--inicio {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 5px 20px; }
+  .seccion .seccion__text--inicio .seccion__text--titulo {
+    text-align: center;
+    font-size: 34px;
+    color: #743db3;
+    margin-bottom: 20px; }
+  .seccion .seccion__text--inicio .seccion__text--parrafo {
+    padding: 5px 5px;
+    font-size: 18px;
+    margin-left: 40px;
+    color: #743db3;
+    word-spacing: 2px;
+    line-height: 30px; }
+  .seccion .seccion__text--inicio .seccion__text--img-in-01 {
+    background-image: url(/img/in-img01.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    justify-content: center; }
+  .seccion .seccion__text--inicio .seccion__text--img-in-02 {
+    background-image: url(/img/perritos.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    justify-content: center; }
+
+/*************************  CLINICA.HTML ********************************/
+.clinica__banner {
+  display: flex;
+  background-image: url(/img/img-curita.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: top; }
+
+.clinica__img {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+
+.clinica__img img {
+  justify-content: center;
+  height: 60vh; }
+
+.clinica__text--cli {
+  color: darkorchid;
+  text-align: center; }
+
+.clinica__text--titulo {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 35px; }
+
+/************************ ALIMENTACION ***************************************************/
+#aliment-in {
+  height: 350px; }
+
+.aliment-banner {
+  background-image: url(/img/dog-food.jpg);
+  height: 290px; }
+
+#alimentacion {
+  height: 670px; }
+
+.tabla .tabla__table {
+  margin: 10px 10px; }
+  .tabla .tabla__table li {
+    list-style-type: none; }
+  .tabla .tabla__table td {
+    padding: 5px;
+    color: #743db3;
+    text-align: center; }
+  .tabla .tabla__table th {
+    background-color: #6213ac;
+    color: #fff;
+    text-align: center; }
+
+.tabla .tabla__table--titulo {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #743db3; }
+
+.acc-banner {
+  background-image: url(/img/fondoAcc.jpg);
+  height: 300px;
+  background-size: cover;
+  margin-bottom: 20px; }
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto; }
+
+.accesorios {
+  background-color: #c55dad;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px; }
+
+.accesorios__img {
+  width: 300px;
+  height: 180px;
+  margin-right: 30px; }
+
+.accesorios__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center; }
+
+.accesorios__parrafo {
+  line-height: 28px;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center; }
+
+/*************************** PELUQUERIA.HTML  **********************************/
+.peluqueria .peluqueria__text {
+  display: flex;
+  align-items: center; }
+  .peluqueria .peluqueria__text .peluqueria__img {
+    max-width: 500px;
+    margin-left: 60px; }
+  .peluqueria .peluqueria__text .peluqueria__text--titulo,
+  .peluqueria .peluqueria__text .peluqueria__text--parrafo {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #6213ac; }
+
+.cortes .cortes__antes-y-despues {
+  display: flex;
+  align-items: flex-end;
+  height: 45vh;
+  margin-left: 60px; }
+  .cortes .cortes__antes-y-despues .cortes__antes-y-despues--parrafo {
+    text-align: center;
+    color: #743db3; }
+  .cortes .cortes__antes-y-despues .cortes__antes-y-despues--titulo {
+    text-align: center;
+    margin-left: 60px;
+    color: #743db3; }
+  .cortes .cortes__antes-y-despues .cortes__antes-y-despues--img {
+    margin: 10px auto; }
+
+/*********************************** NOSOTROS.HTML******************************/
+.nosotros__img {
+  width: 30%;
+  height: 30%;
+  margin-left: 1000px; }
+
+.nosotros__info {
+  width: 60%;
+  margin-top: -580px; }
+
+.nosotros__info--parrafo {
+  text-align: left;
+  line-height: 30px;
+  margin-left: 60px;
+  color: #6f29be;
+  text-transform: uppercase; }
+
+.nosotros__info--h2 {
+  text-align: center;
+  color: #6f29be; }
+
+.nosotros__img--logo {
+  background-image: url(/img/marca.jpg);
+  height: 380px;
+  background-size: cover;
+  margin-left: 60px;
+  margin-bottom: 20px; }
+
+.linea {
+  margin-left: 60px;
+  border: solid #6f29be; }
+
+/*modal */
+.modal {
+  margin-top: 60px; }
+
+.modal-body label {
+  font-weight: bold; }
+
+/**fin modal**/
+.ubicacion {
+  height: 600px; }
+  .ubicacion .ubicacion__maps {
+    margin-top: 5rem; }
+    .ubicacion .ubicacion__maps .ubicacion__maps--titulo {
+      text-align: center;
+      font-size: 38px;
+      padding-bottom: 15px;
+      color: #6f29be; }
+
+/************************* NAV BAR*************************************/
+.logo {
+  margin-left: 60px; }
+
+picture a {
+  text-decoration: none;
+  color: #fff; }
+
+picture a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+/**************************** Barra de navegacion *********************************/
+nav ul {
+  list-style: none; }
+
+nav ul li {
+  line-height: 2rem;
+  position: relative; }
+
+nav li ul {
+  position: absolute; }
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  text-align: center; }
+
+.contacto-n {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: none;
+  text-align: center; }
+
+/***bootstrap**/
+.navbar-nav {
+  margin-left: 0px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #8e22d6; }
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff !important; }
+
+.nav-link {
+  margin: 15px 15px; }
+
+.nav-item button {
+  padding-top: 10px; }
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+dl,
+ol,
+ul {
+  margin-bottom: 0rem; }
+
+/****fin bootstrap*/
+nav ul li a:hover {
+  background-color: #fff;
+  color: #8e22d6;
+  border-radius: 5px; }
+
+.contacto-n:hover {
+  background-color: #fff;
+  color: #8e22d6;
+  border-radius: 5px; }
+
+nav ul li ul {
+  display: none; }
+
+nav ul li:hover ul {
+  /* display: block;*/
+  width: 200px; }
+
+/******primer nivel*************/
+nav > ul {
+  display: table;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  text-align: center; }
+
+nav > ul > li {
+  float: left;
+  text-decoration: none; }
+
+/*segundo nivel**************/
+nav li li {
+  background: #b790e4;
+  top: 20px; }
+
+nav li li:hover {
+  background: #a17ace; }
+
+/********************   INICIO *************************************************************/
+#inicio {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em; }
+
+.banner {
+  background-image: url(/img/banner-in.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 80px; }
+
+.imagenes-inicio {
+  justify-content: center; }
+
+.text-inicio {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 5px 20px; }
+
+.img-in-01 {
+  background-image: url(/img/in-img01.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
+.img-in-02 {
+  background-image: url(/img/perritos.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
+.text-inicio h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #743db3;
+  margin-bottom: 20px; }
+
+.treinta {
+  font-weight: bold;
+  font-size: x-large; }
+
+.text-inicio p {
+  padding: 5px 5px;
+  font-size: 18px;
+  margin-left: 40px;
+  color: #743db3;
+  word-spacing: 2px;
+  line-height: 30px; }
+
+/*************************  CLINICA.HTML ********************************/
+.banner-clinic {
+  display: flex;
+  background-image: url(/img/img-curita.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: top; }
+
+.clinica-in {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+
+.clinica-in img {
+  justify-content: center;
+  height: 60vh; }
+
+.text-cli {
+  color: darkorchid;
+  text-align: center; }
+
+.text-cli h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 35px; }
+
+/************************ ALIMENTACION ***************************************************/
+#aliment-in {
+  height: 350px; }
+
+.aliment-banner {
+  background-image: url(/img/dog-food.jpg);
+  height: 290px; }
+
+#alimentacion {
+  height: 670px; }
+
+#aliment-tabla h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #743db3; }
+
+.tabla li {
+  list-style-type: none; }
+
+.tabla td {
+  padding: 5px;
+  color: #743db3; }
+
+.tabla th {
+  background-color: #6213ac;
+  color: #fff; }
+
+/************************ ACCESORIOS.HTML ********************************************/
+.acc-banner {
+  background-image: url(/img/fondoAcc.jpg);
+  height: 400px;
+  background-size: cover; }
+
+.acc-texts {
+  display: flex;
+  align-items: center; }
+
+.acc-texts p {
+  text-align: center; }
+
+.acc-texts h2 {
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 50px;
+  color: #743db3; }
+
+#colchonetas img {
+  max-width: 250px; }
+
+.juguetes {
+  margin-top: 100px; }
+
+/*************************** PELUQUERIA.HTML  **********************************/
+#peluqueria {
+  height: 690px; }
+
+#peluqueria img {
+  max-width: 500px;
+  margin-left: 60px; }
+
+.pelu-text {
+  display: flex;
+  align-items: center; }
+
+.pelu-text h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #6213ac; }
+
+.antes-despues {
+  display: flex;
+  align-items: flex-end;
+  height: 45vh;
+  margin-left: 60px; }
+
+.antes-despues p {
+  text-align: left; }
+
+.antes-despues h2 {
+  text-align: left;
+  margin-left: 60px;
+  color: #743db3; }
+
+/*********************************** NOSOTROS.HTML******************************/
+#nosotros {
+  height: 800px; }
+
+#nosotros img {
+  width: 30%;
+  height: 30%;
+  margin-left: 1000px; }
+
+.nosotros-info {
+  width: 60%;
+  margin-top: -580px; }
+
+.nosotros-info p {
+  text-align: left;
+  line-height: 30px;
+  margin-left: 60px;
+  color: #6f29be;
+  text-transform: uppercase; }
+
+.nosotros-info h2 {
+  text-align: center;
+  color: #6f29be; }
+
+.img-logo {
+  background-image: url(/img/marca.jpg);
+  height: 380px;
+  background-size: cover;
+  margin-left: 60px;
+  margin-bottom: 20px; }
+
+.linea {
+  margin-left: 60px;
+  border: solid #6f29be; }
+
+/*modal */
+.modal {
+  margin-top: 60px; }
+
+.modal-body label {
+  font-weight: bold; }
+
+/**fin modal**/
+#ubicacion {
+  height: 600px; }
+
+.maps h2 {
+  text-align: center;
+  font-size: 38px;
+  padding-bottom: 15px; }
+
+/*************************Carousel*************************************************/
+.carousel-inner {
+  height: 90vh; }
+
+.carousel-item {
+  height: 100%; }
+
+/****************** Responsive **************************************/
+@media all and (max-width: 768px) {
+  /***** header *****/
+  nav {
+    display: flex;
+    margin-left: 20px;
+    flex-flow: row wrap; }
+  /********************   INICIO *************************************************************/
+  #inicio {
+    flex-flow: row wrap; }
+  .banner {
+    margin-top: 90px; }
+  .text-inicio {
+    flex-flow: row wrap; }
+  /*************************  CLINICA.HTML ********************************/
+  .clinica-in {
+    align-items: center;
+    margin-top: 20px; }
+  .clinica-in img {
+    height: 20vh; }
+  .text-cli {
+    margin: 20px; } }
+
+/***hasta aca llega el responsive 768px*/
+@media all and (max-width: 425px) {
+  /*********************************** NAV BAR*************************************/
+  .logo a h1 {
+    margin-left: 0px; }
+  .navbar-nav {
+    margin-left: 0; } }
+
+/*****************hasta aca llega el resp 425px ************************/
+.redes-sociales {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  z-index: 1000; }
+
+.redes-sociales ul {
+  padding-left: 0;
+  list-style: none; }
+
+.redes-sociales ul li a {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(to right, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
+  padding: 20px 10px;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px #00000029;
+  opacity: 1;
+  font-size: 35px; }
+
+.fa-phone-alt {
+  font-size: 2.2rem; }
+
+.fa-instagram {
+  font-size: 2.5rem; }
+
+.fa-whatsapp {
+  font-size: 2.5rem; }
+
+/***bootstrap**/
+.navbar-nav {
+  margin-left: 0px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #8e22d6; }
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff !important; }
+
+.nav-link {
+  margin: 15px 15px; }
+
+.nav-item button {
+  padding-top: 10px; }
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+dl,
+ol,
+ul {
+  margin-bottom: 0rem; }
+
+.bg-light {
+  --bs-bg-opacity: 0; }
+
+/****fin bootstrap*/

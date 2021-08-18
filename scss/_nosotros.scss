@@ -1,0 +1,61 @@
+/*********************************** NOSOTROS.HTML******************************/
+
+.nosotros__img {
+  width: 30%;
+  height: 30%;
+  margin-left: 1000px;
+}
+
+.nosotros__info {
+  width: 60%;
+  margin-top: -580px;
+}
+
+.nosotros__info--parrafo {
+  text-align: left;
+  line-height: 30px;
+  margin-left: 60px;
+  color: #6f29be;
+  text-transform: uppercase;
+}
+
+.nosotros__info--h2 {
+  text-align: center;
+  color: #6f29be;
+}
+
+.nosotros__img--logo {
+  background-image: url(/img/marca.jpg);
+  height: 380px;
+  background-size: cover;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.linea {
+  margin-left: 60px;
+  border: solid #6f29be;
+}
+
+/*modal */
+.modal {
+  margin-top: 60px;
+}
+
+.modal-body label {
+  font-weight: bold;
+}
+
+/**fin modal**/
+.ubicacion {
+  height: 600px;
+  .ubicacion__maps {
+    margin-top: 5rem;
+    .ubicacion__maps--titulo {
+      text-align: center;
+      font-size: 38px;
+      padding-bottom: 15px;
+      color: #6f29be;
+    }
+  }
+}

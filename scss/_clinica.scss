@@ -1,0 +1,30 @@
+/*************************  CLINICA.HTML ********************************/
+.clinica__banner {
+  display: flex;
+  background-image: url(/img/img-curita.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+}
+
+.clinica__img {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.clinica__img img {
+  justify-content: center;
+  height: 60vh;
+}
+
+.clinica__text--cli {
+  color: darkorchid;
+  text-align: center;
+}
+
+.clinica__text--titulo {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 35px;
+}

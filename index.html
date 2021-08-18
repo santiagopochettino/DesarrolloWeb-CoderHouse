@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 09: Bootstrap</title>
+    <title>Clase 11: Sass1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
     <script src="https://kit.fontawesome.com/f971dd6960.js" crossorigin="anonymous"></script>
     
     
@@ -20,7 +20,7 @@
 <body>
    <header>
        <!--inicio del nav bar-->
-       <!--
+      
             <picture class="logo">
                <a href="index.html"><h1>Veterinaria Pochettino</h1></a>
             </picture>
@@ -38,13 +38,14 @@
             </li>
             <li><a href="nosotros.html">Nosotros</a>
             </li>
-            <button type="button" class="btn contacto-n" data-bs-toggle="modal" data-bs-target="#modal1">
+            <button type="button" class="btn contacto-nav" data-bs-toggle="modal" data-bs-target="#modal1">
                 Contacto
             </button>
            </ul>
        </nav>
-       -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+       <!--
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <picture class="logo">
                 <a href="index.html"><h1>Veterinaria Pochettino</h1></a>
@@ -81,6 +82,8 @@
           </div>
         </div>
       </nav>
+       -->
+      
        <!--fin del nav bar-->
       
 
@@ -88,36 +91,34 @@
    <main> 
     
 
-       <section id="inicio">
-           <div class="banner">
+       <section id="inicio" class="inicio">
+           <div class="inicio__banner">
               
            </div>
          
        </section>   
-       <section class="seccion1" >
-        <div class="text-inicio">
+       <section class="seccion" >
+        <div class="seccion__text--inicio">
           <article>
-            <h2>Desde 1991, dedicados a la salud de las mascotas</h2>
-            <p>Nace como empresa familiar, a cargo de <strong>Luis Fernando Pochettino M.V.</strong> , egresado de la facultad de ciencias veterinarias de la universidad nacional de La Plata, en el año 1985, quien ha realizado múltiples cursos y jornadas de capacitación en clínica y cirugía de pequeños animales dentro y fuera del país.</p>
-            <p>La <strong>experiencia</strong>  adquirida en el transcurso de estos <span class="treinta">30 años</span>, nos permite resolver y dar un mejor servicio de manera integral a nuestros clientes, dando vital importancia a la <strong>prevención y diagnostico</strong> de las enfermedades.</p>
+            <h2 class="seccion__text--titulo">Desde 1991, dedicados a la salud de las mascotas</h2>
+            <p class="seccion__text--parrafo">Nace como empresa familiar, a cargo de <strong>Luis Fernando Pochettino M.V.</strong> , egresado de la facultad de ciencias veterinarias de la universidad nacional de La Plata, en el año 1985, quien ha realizado múltiples cursos y jornadas de capacitación en clínica y cirugía de pequeños animales dentro y fuera del país.</p>
+            <p class="seccion__text--parrafo">La <strong>experiencia</strong>  adquirida en el transcurso de estos <span class="treinta">30 años</span>, nos permite resolver y dar un mejor servicio de manera integral a nuestros clientes, dando vital importancia a la <strong>prevención y diagnostico</strong> de las enfermedades.</p>
           </article>
       
-          <div class="img-in-01 imagenes-inicio imgs" >
-              
+          <div class="seccion__text--img-in-01" >  
           </div>
         </div>
 
         </section>
           
-         <section class="seccion2">
-          <div class="text-inicio">
-            <div class="img-in-02 imagenes-inicio">
-                
+         <section class="seccion">
+          <div class="seccion__text--inicio">
+            <div class="seccion__text--img-in-02">
             </div>
           <article>
-            <h2>Titulo 02</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatem ut placeat repudiandae nobis necessitatibus accusantium error ipsa, inventore non adipisci earum quasi magnam ducimus dicta aut delectus odit nostrum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt repudiandae voluptatibus sunt itaque sit dicta consectetur doloribus! Quam doloremque modi aperiam eveniet distinctio molestiae hic fugit natus ipsa. Dolorum.</p>
+            <h2 class="seccion__text--titulo">Titulo 02</h2>
+            <p class="seccion__text--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatem ut placeat repudiandae nobis necessitatibus accusantium error ipsa, inventore non adipisci earum quasi magnam ducimus dicta aut delectus odit nostrum.</p>
+            <p class="seccion__text--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt repudiandae voluptatibus sunt itaque sit dicta consectetur doloribus! Quam doloremque modi aperiam eveniet distinctio molestiae hic fugit natus ipsa. Dolorum.</p>
            </article>    
           </div>
 
@@ -196,9 +197,9 @@
        
    </main>
    <footer>
-       <div class="pie">
-           <p> Copywright &copy; 2021- Desarrollo Web- CoderHouse - by Spoche</p>
-       </div>
+    <div class="footer__div">
+      <p class="footer__parrafo"> Copywright &copy; 2021- Desarrollo Web- CoderHouse - by Spoche</p>
+  </div>
 
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

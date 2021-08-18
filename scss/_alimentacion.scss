@@ -1,0 +1,37 @@
+/************************ ALIMENTACION ***************************************************/
+#aliment-in {
+  height: 350px;
+}
+
+.aliment-banner {
+  background-image: url(/img/dog-food.jpg);
+  height: 290px;
+}
+
+#alimentacion {
+  height: 670px;
+}
+.tabla {
+  .tabla__table {
+    margin: $margenes;
+
+    li {
+      list-style-type: none;
+    }
+    td {
+      padding: 5px;
+      color: #743db3;
+      text-align: center;
+    }
+    th {
+      background-color: #6213ac;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .tabla__table--titulo {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #743db3;
+  }
+}

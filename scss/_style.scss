@@ -1,0 +1,389 @@
+/************************* NAV BAR*************************************/
+.logo {
+  margin-left: 60px;
+}
+
+picture a {
+  text-decoration: none;
+  color: #fff;
+}
+picture a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/**************************** Barra de navegacion *********************************/
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  line-height: 2rem;
+  position: relative;
+}
+nav li ul {
+  position: absolute;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.contacto-n {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: none;
+  text-align: center;
+}
+/***bootstrap**/
+.navbar-nav {
+  margin-left: 0px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #8e22d6;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff !important;
+}
+.nav-link {
+  margin: 15px 15px;
+}
+.nav-item button {
+  padding-top: 10px;
+}
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+dl,
+ol,
+ul {
+  margin-bottom: 0rem;
+}
+/****fin bootstrap*/
+nav ul li a:hover {
+  background-color: #fff;
+  color: #8e22d6;
+  border-radius: 5px;
+}
+.contacto-n:hover {
+  background-color: #fff;
+  color: #8e22d6;
+  border-radius: 5px;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li:hover ul {
+  /* display: block;*/
+  width: 200px;
+}
+/******primer nivel*************/
+nav > ul {
+  display: table;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+nav > ul > li {
+  float: left;
+  text-decoration: none;
+}
+/*segundo nivel**************/
+nav li li {
+  background: rgb(183, 144, 228);
+  top: 20px;
+}
+nav li li:hover {
+  background: rgb(161, 122, 206);
+}
+/********************   INICIO *************************************************************/
+#inicio {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+}
+.banner {
+  background-image: url(/img/banner-in.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 80px;
+}
+.imagenes-inicio {
+  justify-content: center;
+}
+
+.text-inicio {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 5px 20px;
+}
+.img-in-01 {
+  background-image: url(/img/in-img01.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.img-in-02 {
+  background-image: url(/img/perritos.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.text-inicio h2 {
+  text-align: center;
+  font-size: 34px;
+  color: rgb(116, 61, 179);
+  margin-bottom: 20px;
+}
+
+.treinta {
+  font-weight: bold;
+  font-size: x-large;
+}
+.text-inicio p {
+  padding: 5px 5px;
+  font-size: 18px;
+  margin-left: 40px;
+  color: rgb(116, 61, 179);
+  word-spacing: 2px;
+  line-height: 30px;
+}
+
+/*************************  CLINICA.HTML ********************************/
+
+.banner-clinic {
+  display: flex;
+  background-image: url(/img/img-curita.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+}
+.clinica-in {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.clinica-in img {
+  justify-content: center;
+
+  height: 60vh;
+}
+
+.text-cli {
+  color: darkorchid;
+  text-align: center;
+}
+.text-cli h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+
+/************************ ALIMENTACION ***************************************************/
+#aliment-in {
+  height: 350px;
+}
+.aliment-banner {
+  background-image: url(/img/dog-food.jpg);
+  height: 290px;
+}
+#alimentacion {
+  height: 670px;
+}
+#aliment-tabla h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgb(116, 61, 179);
+}
+
+.tabla li {
+  list-style-type: none;
+}
+.tabla td {
+  padding: 5px;
+  color: rgb(116, 61, 179);
+}
+.tabla th {
+  background-color: rgb(98, 19, 172);
+  color: #fff;
+}
+/************************ ACCESORIOS.HTML ********************************************/
+
+.acc-banner {
+  background-image: url(/img/fondoAcc.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.acc-texts {
+  display: flex;
+  align-items: center;
+}
+.acc-texts p {
+  text-align: center;
+}
+.acc-texts h2 {
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 50px;
+  color: rgb(116, 61, 179);
+}
+#colchonetas img {
+  max-width: 250px;
+}
+.juguetes {
+  margin-top: 100px;
+}
+/*************************** PELUQUERIA.HTML  **********************************/
+#peluqueria {
+  height: 690px;
+}
+#peluqueria img {
+  max-width: 500px;
+  margin-left: 60px;
+}
+.pelu-text {
+  display: flex;
+  align-items: center;
+}
+.pelu-text h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(98, 19, 172);
+}
+
+.antes-despues {
+  display: flex;
+  align-items: flex-end;
+  height: 45vh;
+  margin-left: 60px;
+}
+.antes-despues p {
+  text-align: left;
+}
+.antes-despues h2 {
+  text-align: left;
+  margin-left: 60px;
+  color: rgb(116, 61, 179);
+}
+
+/*********************************** NOSOTROS.HTML******************************/
+#nosotros {
+  height: 800px;
+}
+#nosotros img {
+  width: 30%;
+  height: 30%;
+  margin-left: 1000px;
+}
+.nosotros-info {
+  width: 60%;
+  margin-top: -580px;
+}
+.nosotros-info p {
+  text-align: left;
+  line-height: 30px;
+  margin-left: 60px;
+  color: rgb(111, 41, 190);
+  text-transform: uppercase;
+}
+.nosotros-info h2 {
+  text-align: center;
+  color: rgb(111, 41, 190);
+}
+.img-logo {
+  background-image: url(/img/marca.jpg);
+  height: 380px;
+  background-size: cover;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.linea {
+  margin-left: 60px;
+  border: solid rgb(111, 41, 190);
+}
+/*modal */
+.modal {
+  margin-top: 60px;
+}
+.modal-body label {
+  font-weight: bold;
+}
+
+/**fin modal**/
+#ubicacion {
+  height: 600px;
+}
+.maps h2 {
+  text-align: center;
+  font-size: 38px;
+  padding-bottom: 15px;
+}
+/*************************Carousel*************************************************/
+.carousel-inner {
+  height: 90vh;
+}
+.carousel-item {
+  height: 100%;
+}
+/****************** Responsive **************************************/
+@media all and (max-width: 768px) {
+  /***** header *****/
+  nav {
+    display: flex;
+    margin-left: 20px;
+    flex-flow: row wrap;
+  }
+  /********************   INICIO *************************************************************/
+  #inicio {
+    flex-flow: row wrap;
+  }
+  .banner {
+    margin-top: 90px;
+  }
+
+  .text-inicio {
+    flex-flow: row wrap;
+  }
+  /*************************  CLINICA.HTML ********************************/
+  .clinica-in {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .clinica-in img {
+    height: 20vh;
+  }
+
+  .text-cli {
+    margin: 20px;
+  }
+} /***hasta aca llega el responsive 768px*/
+@media all and(max-width:425px) {
+  /*********************************** NAV BAR*************************************/
+  .logo a h1 {
+    margin-left: 0px;
+  }
+  .navbar-nav {
+    margin-left: 0;
+  }
+} /*****************hasta aca llega el resp 425px ************************/

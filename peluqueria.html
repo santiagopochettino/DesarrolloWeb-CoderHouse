@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
     <header>
@@ -66,38 +66,32 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    <section id="peluqueria">
-       <div class="banner-peluqueria">
-
-       </div>
-      
-        <div class="pelu-text">
-            <div class="peluqueria">
-                <img src="/img/img-ducha.jpg" alt="perro en la ducha">
+    <section class="peluqueria">
+       
+        <div class="peluqueria__text">
+            <div >
+                <img class="peluqueria__img"src="/img/img-ducha.jpg" alt="perro en la ducha">
             </div>
             <article>
-                <h2>Titulo del articulo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
+                <h2 class="peluqueria__text--titulo">Peluqueria</h2>
+            <p class="peluqueria__text--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
+            <p class="peluqueria__text--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
+            <p class="peluqueria__text--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
             </article>
             
         </div>
 
     </section>
-    <section id="cortes">
-        <div>
-            
-        </div>
-        <div class="antes-despues">
-            <div class="cortes">
-                <img src="/img/ant-desp.jfif" alt="antes y despues">
+    <section class="cortes">
+        <div class="cortes__antes-y-despues">
+            <div>
+                <img class="cortes__antes-y-despues--img" src="/img/ant-desp.jfif" alt="antes y despues">
             </div>
             <article>
-                <h2>Antes y después</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
+                <h2 class="cortes__antes-y-despues--titulo">Antes y después</h2>
+                <p class="cortes__antes-y-despues--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
+                <p class="cortes__antes-y-despues--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
+                <p class="cortes__antes-y-despues--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat exercitationem ipsum quia, in, eius reiciendis nemo ullam sint perferendis, porro quod inventore. Itaque doloremque, totam esse aliquam quos quo?</p>
             </article>
         </div>
     </section>
@@ -164,9 +158,9 @@
 </main>
 
 <footer>
-    <div class="pie">
-        <p> Copywright &copy; 2021- Desarrollo Web- CoderHouse - by Spoche</p>
-    </div>
+  <div class="footer__div">
+    <p class="footer__parrafo"> Copywright &copy; 2021- Desarrollo Web- CoderHouse - by Spoche</p>
+</div>
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
