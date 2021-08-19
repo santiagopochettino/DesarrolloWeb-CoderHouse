@@ -33,6 +33,9 @@ header {
   header picture a:hover {
     text-decoration: none;
     color: #fff; }
+  header .logo:hover {
+    transform: scale(1.1, 1);
+    transition: ease 1s; }
   header nav ul {
     list-style: none; }
     header nav ul li {
@@ -87,6 +90,9 @@ header {
       box-shadow: 3px 3px 6px #00000029;
       opacity: 1;
       font-size: 35px; }
+    .redes-sociales ul li a:hover {
+      transform: scale(1.4, 1);
+      transition: ease 1s; }
 
 .fa-phone-alt {
   font-size: 2.2rem; }

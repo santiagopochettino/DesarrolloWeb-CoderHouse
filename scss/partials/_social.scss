@@ -23,6 +23,10 @@
         opacity: 1;
         font-size: 35px;
       }
+      a:hover {
+        transform: scale(1.4, 1);
+        transition: ease 1s;
+      }
     }
   }
 }

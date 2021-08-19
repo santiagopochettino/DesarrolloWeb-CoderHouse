@@ -26,6 +26,10 @@ header {
       color: #fff;
     }
   }
+  .logo:hover {
+    transform: scale(1.1, 1);
+    transition: ease 1s;
+  }
   nav {
     ul {
       list-style: none;
