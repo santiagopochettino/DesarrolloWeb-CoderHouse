@@ -1,9 +1,29 @@
 //Colores
 $colorF: #fff;
 $color-estandar: #6f29be;
-
+$color-desafio: rgb(231, 170, 218);
+$color-desafio2: rgba(174, 102, 223, 0.333);
+$color-desafio3: #c59cf5;
+$color-desafio4: rgb(248, 91, 178);
 //Textos
 
 //tamaños
 
 $margenes: 10px 10px;
+
+// Tarea de  bucle
+@for $i from 1 through 4 {
+  .bg-#{$i} {
+    @if $i == 1 {
+      background-color: $color-desafio;
+    } @else if $i == 2 {
+      background-color: $color-desafio2;
+    } @else if $i == 3 {
+      background-color: $color-desafio4;
+    } @else if $i == 4 {
+      background-color: $color-desafio3;
+    } @else {
+      color: gray;
+    }
+  }
+}
