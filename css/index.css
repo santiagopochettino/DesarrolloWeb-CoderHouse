@@ -102,31 +102,34 @@ header {
     width: 100%;
     justify-content: center; }
 
-/*************************  CLINICA.HTML ********************************/
-.clinica__banner {
+.clinica .clinica__banner {
   display: flex;
   background-image: url(/img/img-curita.jpg);
   height: 300px;
   background-size: cover;
   background-position: top; }
 
-.clinica__img {
-  display: flex;
-  align-items: center;
-  margin-top: 20px; }
-
-.clinica__img img {
-  justify-content: center;
-  height: 60vh; }
-
-.clinica__text--cli {
-  color: darkorchid;
+.clinica .clinica__text--cli {
+  color: #6f29be;
   text-align: center; }
+  .clinica .clinica__text--cli .clinica__text--titulo {
+    padding-bottom: 20px;
+    font-style: italic; }
+  .clinica .clinica__text--cli .clinica__text--parrafo {
+    margin: 10px 10px; }
+  .clinica .clinica__text--cli .clinica__img {
+    background-image: url(/img/vacuna.png);
+    height: 600px;
+    background-size: cover;
+    margin: 15px auto; }
 
-.clinica__text--titulo {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 35px; }
+.clinica ul {
+  list-style: none; }
+  .clinica ul li {
+    font-size: larger; }
+
+.clinica ol {
+  text-align: left; }
 
 /************************ ALIMENTACION ***************************************************/
 #aliment-in {
@@ -194,7 +197,6 @@ header {
   color: #fff;
   text-align: center; }
 
-/*************************** PELUQUERIA.HTML  **********************************/
 .peluqueria .peluqueria__text {
   display: flex;
   align-items: center; }
@@ -205,7 +207,7 @@ header {
   .peluqueria .peluqueria__text .peluqueria__text--parrafo {
     text-align: center;
     margin-bottom: 10px;
-    color: #6213ac; }
+    color: #6f29be; }
 
 .cortes .cortes__antes-y-despues {
   display: flex;
@@ -214,13 +216,13 @@ header {
   margin-left: 60px; }
   .cortes .cortes__antes-y-despues .cortes__antes-y-despues--parrafo {
     text-align: center;
-    color: #743db3; }
+    color: #6f29be; }
   .cortes .cortes__antes-y-despues .cortes__antes-y-despues--titulo {
     text-align: center;
     margin-left: 60px;
-    color: #743db3; }
+    color: #6f29be; }
   .cortes .cortes__antes-y-despues .cortes__antes-y-despues--img {
-    margin: 10px auto; }
+    margin: 10px; }
 
 /*********************************** NOSOTROS.HTML******************************/
 .nosotros__img {
@@ -639,20 +641,18 @@ nav li li:hover {
   left: 0;
   top: 200px;
   z-index: 1000; }
-
-.redes-sociales ul {
-  padding-left: 0;
-  list-style: none; }
-
-.redes-sociales ul li a {
-  display: inline-block;
-  color: white;
-  background: linear-gradient(to right, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
-  padding: 20px 10px;
-  text-decoration: none;
-  box-shadow: 3px 3px 6px #00000029;
-  opacity: 1;
-  font-size: 35px; }
+  .redes-sociales ul {
+    padding-left: 0;
+    list-style: none; }
+    .redes-sociales ul li a {
+      display: inline-block;
+      color: white;
+      background: linear-gradient(to right, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
+      padding: 20px 10px;
+      text-decoration: none;
+      box-shadow: 3px 3px 6px #00000029;
+      opacity: 1;
+      font-size: 35px; }
 
 .fa-phone-alt {
   font-size: 2.2rem; }

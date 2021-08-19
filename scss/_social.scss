@@ -4,22 +4,29 @@
   left: 0;
   top: 200px;
   z-index: 1000;
-}
-.redes-sociales ul {
-  padding-left: 0;
-  list-style: none;
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+      a {
+        display: inline-block;
+        color: white;
+        background: linear-gradient(
+          to right,
+          #822bd8 6%,
+          #8e22d6 33%,
+          #d875c1 56%
+        );
+        padding: 20px 10px;
+        text-decoration: none;
+        box-shadow: 3px 3px 6px #00000029;
+        opacity: 1;
+        font-size: 35px;
+      }
+    }
+  }
 }
 
-.redes-sociales ul li a {
-  display: inline-block;
-  color: white;
-  background: linear-gradient(to right, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
-  padding: 20px 10px;
-  text-decoration: none;
-  box-shadow: 3px 3px 6px #00000029;
-  opacity: 1;
-  font-size: 35px;
-}
 .fa-phone-alt {
   font-size: 2.2rem;
 }

@@ -15,13 +15,13 @@
   text-align: left;
   line-height: 30px;
   margin-left: 60px;
-  color: #6f29be;
+  color: $color-estandar;
   text-transform: uppercase;
 }
 
 .nosotros__info--h2 {
   text-align: center;
-  color: #6f29be;
+  color: $color-estandar;
 }
 
 .nosotros__img--logo {
@@ -34,7 +34,7 @@
 
 .linea {
   margin-left: 60px;
-  border: solid #6f29be;
+  border: solid $color-estandar;
 }
 
 /*modal */

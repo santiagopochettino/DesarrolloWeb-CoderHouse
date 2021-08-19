@@ -1,30 +1,37 @@
-/*************************  CLINICA.HTML ********************************/
-.clinica__banner {
-  display: flex;
-  background-image: url(/img/img-curita.jpg);
-  height: 300px;
-  background-size: cover;
-  background-position: top;
-}
+//  CLINICA.HTML
+.clinica {
+  .clinica__banner {
+    display: flex;
+    background-image: url(/img/img-curita.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+  }
 
-.clinica__img {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.clinica__img img {
-  justify-content: center;
-  height: 60vh;
-}
-
-.clinica__text--cli {
-  color: darkorchid;
-  text-align: center;
-}
-
-.clinica__text--titulo {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 35px;
+  .clinica__text--cli {
+    color: $color-estandar;
+    text-align: center;
+    .clinica__text--titulo {
+      padding-bottom: 20px;
+      font-style: italic;
+    }
+    .clinica__text--parrafo {
+      margin: 10px 10px;
+    }
+    .clinica__img {
+      background-image: url(/img/vacuna.png);
+      height: 600px;
+      background-size: cover;
+      margin: 15px auto;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      font-size: larger;
+    }
+  }
+  ol {
+    text-align: left;
+  }
 }
