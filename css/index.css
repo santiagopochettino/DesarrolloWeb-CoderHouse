@@ -111,7 +111,8 @@ header {
 
 .clinica .clinica__text--cli {
   color: #6f29be;
-  text-align: center; }
+  text-align: center;
+  margin: 10px 50px; }
   .clinica .clinica__text--cli .clinica__text--titulo {
     padding-bottom: 20px;
     font-style: italic; }
@@ -170,32 +171,28 @@ header {
   max-width: 1000px;
   width: 90%;
   margin: 0 auto; }
-
-.accesorios {
-  background-color: #c55dad;
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-bottom: 50px; }
-
-.accesorios__img {
-  width: 300px;
-  height: 180px;
-  margin-right: 30px; }
-
-.accesorios__titulo {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #fff;
-  text-align: center; }
-
-.accesorios__parrafo {
-  line-height: 28px;
-  font-size: 1rem;
-  color: #fff;
-  text-align: center; }
+  .contenedor .accesorios {
+    background-color: #c55dad;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px; }
+    .contenedor .accesorios .accesorios__img {
+      width: 300px;
+      height: 180px;
+      margin-right: 30px; }
+  .contenedor .accesorios__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center; }
+  .contenedor .accesorios__parrafo {
+    line-height: 28px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center; }
 
 .peluqueria .peluqueria__text {
   display: flex;
