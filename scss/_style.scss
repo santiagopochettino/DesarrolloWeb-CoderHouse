@@ -117,7 +117,7 @@ nav li li:hover {
   gap: 1em;
 }
 .banner {
-  background-image: url(/img/banner-in.jpg);
+  background-image: url(../img/banner-in.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -135,7 +135,7 @@ nav li li:hover {
   margin: 5px 20px;
 }
 .img-in-01 {
-  background-image: url(/img/in-img01.jpg);
+  background-image: url(../img/in-img01.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -353,6 +353,9 @@ nav li li:hover {
     display: flex;
     margin-left: 20px;
     flex-flow: row wrap;
+  }
+  .logo h1 {
+    margin-left: 0;
   }
   /********************   INICIO *************************************************************/
   #inicio {

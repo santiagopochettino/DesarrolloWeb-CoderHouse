@@ -4,7 +4,7 @@
   flex-flow: column wrap;
   gap: 1em;
   .inicio__banner {
-    background-image: url(/img/banner-in.jpg);
+    background-image: url(../img/banner-in.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@
       line-height: 30px;
     }
     .seccion__text--img-in-01 {
-      background-image: url(/img/in-img01.jpg);
+      background-image: url(../img/in-img01.jpg);
       height: 400px;
       background-size: cover;
       background-position: center;
@@ -42,7 +42,7 @@
     }
 
     .seccion__text--img-in-02 {
-      background-image: url(/img/perritos.jpg);
+      background-image: url(../img/perritos.jpg);
       height: 400px;
       background-size: cover;
       background-position: center;

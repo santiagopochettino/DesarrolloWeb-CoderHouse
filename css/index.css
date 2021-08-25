@@ -1,21 +1,7 @@
-.bg-1 {
-  background-color: #e7aada; }
-
-.bg-2 {
-  background-color: rgba(174, 102, 223, 0.333); }
-
-.bg-3 {
-  background-color: #f85bb2; }
-
-.bg-4 {
-  background-color: #c59cf5; }
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-html {
+  box-sizing: border-box;
   font-family: "Roboto bold", sans-serif; }
 
 header {
@@ -33,9 +19,6 @@ header {
   header picture a:hover {
     text-decoration: none;
     color: #fff; }
-  header .logo:hover {
-    transform: scale(1.1, 1);
-    transition: ease 1s; }
   header nav ul {
     list-style: none; }
     header nav ul li {
@@ -46,7 +29,6 @@ header {
         color: #fff;
         display: block;
         font-weight: bold;
-        padding: 0 1.5rem;
         text-align: center; }
       header nav ul li a:hover {
         background-color: #fff;
@@ -57,8 +39,7 @@ header {
       color: #fff;
       display: block;
       font-weight: bold;
-      padding: none;
-      text-align: center; }
+      padding: none; }
     header nav ul .contacto-nav:hover {
       background-color: #fff;
       color: #8e22d6;
@@ -108,7 +89,7 @@ header {
   flex-flow: column wrap;
   gap: 1em; }
   .inicio .inicio__banner {
-    background-image: url(/img/banner-in.jpg);
+    background-image: url(../img/banner-in.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -133,14 +114,14 @@ header {
     word-spacing: 2px;
     line-height: 30px; }
   .seccion .seccion__text--inicio .seccion__text--img-in-01 {
-    background-image: url(/img/in-img01.jpg);
+    background-image: url(../img/in-img01.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
     width: 100%;
     justify-content: center; }
   .seccion .seccion__text--inicio .seccion__text--img-in-02 {
-    background-image: url(/img/perritos.jpg);
+    background-image: url(../img/perritos.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -149,7 +130,7 @@ header {
 
 .clinica .clinica__banner {
   display: flex;
-  background-image: url(/img/img-curita.jpg);
+  background-image: url(../img/img-curita.jpg);
   height: 300px;
   background-size: cover;
   background-position: top; }
@@ -164,7 +145,7 @@ header {
   .clinica .clinica__text--cli .clinica__text--parrafo {
     margin: 10px 10px; }
   .clinica .clinica__text--cli .clinica__img {
-    background-image: url(/img/vacuna.png);
+    background-image: url(../img/vacuna.png);
     height: 600px;
     background-size: cover;
     margin: 15px auto; }
@@ -182,7 +163,7 @@ header {
   height: 350px; }
 
 .aliment-banner {
-  background-image: url(/img/dog-food.jpg);
+  background-image: url(../img/dog-food.jpg);
   height: 290px; }
 
 #alimentacion {
@@ -207,7 +188,7 @@ header {
   color: #743db3; }
 
 .acc-banner {
-  background-image: url(/img/fondoAcc.jpg);
+  background-image: url(../img/fondoAcc.jpg);
   height: 300px;
   background-size: cover;
   margin-bottom: 20px; }
@@ -266,7 +247,6 @@ header {
   .cortes .cortes__antes-y-despues .cortes__antes-y-despues--img {
     margin: 10px; }
 
-/*********************************** NOSOTROS.HTML******************************/
 .nosotros__img {
   width: 30%;
   height: 30%;
@@ -288,7 +268,7 @@ header {
   color: #6f29be; }
 
 .nosotros__img--logo {
-  background-image: url(/img/marca.jpg);
+  background-image: url(../img/marca.jpg);
   height: 380px;
   background-size: cover;
   margin-left: 60px;
@@ -431,7 +411,7 @@ nav li li:hover {
   gap: 1em; }
 
 .banner {
-  background-image: url(/img/banner-in.jpg);
+  background-image: url(../img/banner-in.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -448,7 +428,7 @@ nav li li:hover {
   margin: 5px 20px; }
 
 .img-in-01 {
-  background-image: url(/img/in-img01.jpg);
+  background-image: url(../img/in-img01.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -653,6 +633,8 @@ nav li li:hover {
     display: flex;
     margin-left: 20px;
     flex-flow: row wrap; }
+  .logo h1 {
+    margin-left: 0; }
   /********************   INICIO *************************************************************/
   #inicio {
     flex-flow: row wrap; }
