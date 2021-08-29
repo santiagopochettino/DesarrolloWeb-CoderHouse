@@ -126,13 +126,15 @@ header {
     width: 100%;
     justify-content: center; }
 
-.container .card .card-body .card-title {
-  font-weight: bold;
-  text-align: center;
-  color: #6f29be; }
-
-.container .card .card-body .card-text {
-  color: #6f29be; }
+.container .card .card-body {
+  box-shadow: 0px 6px 12px #d43cc029;
+  border: none; }
+  .container .card .card-body .card-title {
+    font-weight: bold;
+    text-align: center;
+    color: #6f29be; }
+  .container .card .card-body .card-text {
+    color: #6f29be; }
 
 .clinica .clinica__banner {
   display: flex;
@@ -724,6 +726,40 @@ ul {
         position: relative;
         padding: 10px 30px;
         opacity: 1;
-        font-size: 30px; } }
+        font-size: 30px; }
+  .carousel {
+    padding-top: 60px;
+    height: 260px; }
+  .peluqueria .peluqueria__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .peluqueria .peluqueria__text .peluqueria__img {
+      max-width: 100%;
+      margin-left: 0; }
+    .peluqueria .peluqueria__text .peluqueria__text--titulo,
+    .peluqueria .peluqueria__text .peluqueria__text--parrafo {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #6f29be;
+      margin: 0px 20px; }
+  .cortes {
+    height: 600px; }
+    .cortes .cortes__antes-y-despues {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 45vh;
+      margin-left: 0px; }
+      .cortes .cortes__antes-y-despues .cortes__antes-y-despues--parrafo {
+        text-align: center;
+        color: #6f29be;
+        margin: 0px 20px; }
+      .cortes .cortes__antes-y-despues .cortes__antes-y-despues--titulo {
+        margin: 0px 20px;
+        margin-left: 0px; }
+      .cortes .cortes__antes-y-despues .cortes__antes-y-despues--img {
+        display: flex;
+        height: 200px; } }
 
 /*****************hasta aca llega el resp 425px ************************/
