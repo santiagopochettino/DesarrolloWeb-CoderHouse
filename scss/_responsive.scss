@@ -56,4 +56,25 @@
       }
     }
   }
+  // Inicio
+  .inicio {
+    .inicio__banner {
+      height: 300px;
+    }
+  }
+  .seccion {
+    .seccion__text--inicio {
+      flex-direction: column;
+      .seccion__text--titulo {
+        text-align: center;
+      }
+      .seccion__text--img-in-01 {
+        height: 300px;
+      }
+
+      .seccion__text--img-in-02 {
+        height: 300px;
+      }
+    }
+  }
 } /*****************hasta aca llega el resp 425px ************************/
