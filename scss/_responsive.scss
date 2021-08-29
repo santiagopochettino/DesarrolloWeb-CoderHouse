@@ -77,4 +77,24 @@
       }
     }
   }
+  //redes sociales
+  .redes-sociales {
+    left: 0%;
+    top: 75%;
+    z-index: 2000;
+
+    ul {
+      list-style: none;
+      display: inline;
+
+      li {
+        a {
+          position: relative;
+          padding: 10px 30px;
+          opacity: 1;
+          font-size: 30px;
+        }
+      }
+    }
+  }
 } /*****************hasta aca llega el resp 425px ************************/

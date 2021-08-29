@@ -126,6 +126,14 @@ header {
     width: 100%;
     justify-content: center; }
 
+.container .card .card-body .card-title {
+  font-weight: bold;
+  text-align: center;
+  color: #6f29be; }
+
+.container .card .card-body .card-text {
+  color: #6f29be; }
+
 .clinica .clinica__banner {
   display: flex;
   background-image: url(../img/img-curita.jpg);
@@ -704,6 +712,18 @@ ul {
     .seccion .seccion__text--inicio .seccion__text--img-in-01 {
       height: 300px; }
     .seccion .seccion__text--inicio .seccion__text--img-in-02 {
-      height: 300px; } }
+      height: 300px; }
+  .redes-sociales {
+    left: 0%;
+    top: 75%;
+    z-index: 2000; }
+    .redes-sociales ul {
+      list-style: none;
+      display: inline; }
+      .redes-sociales ul li a {
+        position: relative;
+        padding: 10px 30px;
+        opacity: 1;
+        font-size: 30px; } }
 
 /*****************hasta aca llega el resp 425px ************************/
