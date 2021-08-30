@@ -675,14 +675,12 @@ ul {
     flex-flow: row wrap; }
   .logo h1 {
     margin-left: 0; }
-  /********************   INICIO *************************************************************/
   #inicio {
     flex-flow: row wrap; }
   .banner {
     margin-top: 90px; }
   .text-inicio {
     flex-flow: row wrap; }
-  /*************************  CLINICA.HTML ********************************/
   .clinica-in {
     align-items: center;
     margin-top: 20px; }
