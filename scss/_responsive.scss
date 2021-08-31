@@ -35,10 +35,15 @@
 } /***hasta aca llega el responsive 768px*/
 @media all and(max-width:426px) {
   header {
+    display: flex;
     nav {
+      flex-direction: column;
+      margin-bottom: 20px;
+
       .navbar-toggler {
-        padding: 0.25rem 0.75rem;
+        padding: 0.25rem 0.5rem;
         margin-top: 20px;
+
         margin-left: -10px;
         font-size: 1.25rem;
         line-height: 1;
@@ -50,7 +55,8 @@
       picture {
         a {
           h1 {
-            margin-top: -10%;
+            padding-left: 20px;
+            margin-top: 30px;
           }
         }
       }
@@ -99,8 +105,11 @@
   }
   // PELUQUERIA.HTML
   .carousel {
-    padding-top: 60px;
-    height: 260px;
+    height: 200px;
+    padding-top: 150px;
+  }
+  .carousel-indicators {
+    display: none;
   }
   .peluqueria {
     .peluqueria__text {
@@ -143,6 +152,24 @@
         display: flex;
         height: 200px;
       }
+    }
+  }
+  //  CLINICA.HTML
+  .clinica {
+    .clinica__text--cli {
+      margin: 10px 10px;
+    }
+  }
+  //ACCESORIOS.HTML
+  .acc-banner {
+    background-position: center;
+  }
+  .contenedor {
+    display: flex;
+    .accesorios {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
   }
 } /*****************hasta aca llega el resp 425px ************************/

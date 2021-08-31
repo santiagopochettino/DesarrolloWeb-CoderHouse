@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index.css"/>
     <script src="https://kit.fontawesome.com/f971dd6960.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/faviconP.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     
     
@@ -24,30 +25,7 @@
 <body>
    <header>
        <!--inicio del nav bar-->
-      <!--
-            <picture class="logo">
-               <a href="index.html"><h1>Veterinaria Pochettino</h1></a>
-            </picture>
-       <nav>
-           <ul>
-            <li><a href="index.html">Inicio</a>
-            </li>
-            <li><a href="clinica.html">Clinica</a>
-            </li>
-            <li><a href="alimentacion.html">Alimentación</a>
-            </li>
-            <li><a href="accesorios.html">Accesorios</a>
-            </li>
-            <li><a href="peluqueria.html">Peluqueria</a>
-            </li>
-            <li><a href="nosotros.html">Nosotros</a>
-            </li>
-            <button type="button" class="btn contacto-nav" data-bs-toggle="modal" data-bs-target="#modal1">
-                Contacto
-            </button>
-           </ul>
-       </nav>
-      -->
+      <!-- -->
        
        <!-- Inicio Nav Bar-->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,10 +33,9 @@
           <button class="navbar-toggler menu__hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <picture class="logo">
-                <a href="index.html"><h1>Veterinaria Pochettino</h1></a>
-             </picture>
-         
+          <picture>
+            <a href="/"><h1>Veterinaria Pochettino</h1></a>
+         </picture>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -94,7 +71,7 @@
     
 
        <section id="inicio" class="inicio">
-           <div class="inicio__banner">
+           <div class="inicio__banner" data-aos="fade-down" data-aos-duration="2000">
               
            </div>
          
@@ -107,7 +84,7 @@
             <p class="seccion__text--parrafo bg-1">La <strong>experiencia</strong>  adquirida en el transcurso de estos <span class="treinta">30 años</span>, nos permite resolver y dar un mejor servicio de manera integral a nuestros clientes, dando vital importancia a la <strong>prevención y diagnostico</strong> de las enfermedades.</p>
           </article>
       
-          <div class="seccion__text--img-in-01" >  
+          <div class="seccion__text--img-in-01" data-aos="fade-left" data-aos-duration="2000" >  
           </div>
         </div>
 
@@ -117,17 +94,19 @@
           <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
               <div class="col mb-4">
-                <div class="card">
+                <div class="card"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
                   <img src="../img/card3.jfif" class="card-img-top" alt="...">
-                  <div class="card-body">
+                  <div class="card-body" >
                     <h4 class="card-title">Alimentación</h4>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
               </div>
+              
+
               <div class="col mb-4">
-                <div class="card">
-                  <img src="img/card1.jpg" class="card-img-top" alt="...">
+                <div class="card"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+                  <img src="../img/card1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h4 class="card-title">Salud</h4>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -135,7 +114,7 @@
                 </div>
               </div>
               <div class="col mb-4">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
                   <img src="../img/card2.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h4 class="card-title">Higiene</h4>
@@ -149,7 +128,7 @@
           
          <section class="seccion">
           <div class="seccion__text--inicio">
-            <div class="seccion__text--img-in-02">
+            <div class="seccion__text--img-in-02" data-aos="fade-right" data-aos-duration="2000">
             </div>
           <article >
             <h2 class="seccion__text--titulo bg-2">Titulo 02</h2>
@@ -241,6 +220,10 @@
 
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
