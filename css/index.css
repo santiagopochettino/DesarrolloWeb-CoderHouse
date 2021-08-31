@@ -706,9 +706,6 @@ ul {
         border: 1px solid transparent;
         border-radius: 0.25rem;
         transition: box-shadow 0.15s ease-in-out; }
-      header nav picture a h1 {
-        padding-left: 20px;
-        margin-top: 30px; }
   .inicio .inicio__banner {
     height: 300px; }
   .seccion .seccion__text--inicio {
@@ -733,8 +730,10 @@ ul {
         font-size: 30px; }
   .carousel {
     height: 200px;
-    padding-top: 150px; }
-  .carousel-indicators {
+    padding-top: 100px; }
+  .carousel-indicators,
+  .carousel-control-prev,
+  .carousel-control-next {
     display: none; }
   .peluqueria .peluqueria__text {
     display: flex;
@@ -776,8 +775,23 @@ ul {
     .contenedor .accesorios {
       display: flex;
       align-items: center;
-      flex-direction: column; } }
+      flex-direction: column; }
+      .contenedor .accesorios .accesorios__img {
+        width: 250px;
+        height: 180px;
+        margin-right: 0px;
+        border-radius: 20px; } }
 
 /*****************hasta aca llega el resp 425px ************************/
+@media all and (max-width: 321px) {
+  header {
+    display: flex; }
+    header nav {
+      flex-direction: column; }
+      header nav picture a h1 {
+        padding-left: 10px;
+        margin-top: -50px; } }
+
+/*hasta aca 320*/
 .card {
   border: none; }
