@@ -1,17 +1,27 @@
 /************************ ALIMENTACION ***************************************************/
 #aliment-in {
-  height: 350px;
+  .aliment-banner {
+    background-image: url(../img/perritos-aliment.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-
-.aliment-banner {
-  background-image: url(../img/dog-food.jpg);
-  height: 290px;
-}
-
-#alimentacion {
-  height: 670px;
+.cachorros {
+  .card {
+    margin: 5px 60px;
+    .card-title {
+      color: $color-estandar;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card-text {
+      color: $color-estandar;
+    }
+  }
 }
 .tabla {
+  margin: 5px 60px;
   .tabla__table {
     margin: $margenes;
 

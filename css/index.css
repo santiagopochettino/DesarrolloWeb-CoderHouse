@@ -169,33 +169,39 @@ header {
   text-align: left; }
 
 /************************ ALIMENTACION ***************************************************/
-#aliment-in {
-  height: 350px; }
+#aliment-in .aliment-banner {
+  background-image: url(../img/perritos-aliment.jpg);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.aliment-banner {
-  background-image: url(../img/dog-food.jpg);
-  height: 290px; }
-
-#alimentacion {
-  height: 670px; }
-
-.tabla .tabla__table {
-  margin: 10px 10px; }
-  .tabla .tabla__table li {
-    list-style-type: none; }
-  .tabla .tabla__table td {
-    padding: 5px;
-    color: #743db3;
+.cachorros .card {
+  margin: 5px 60px; }
+  .cachorros .card .card-title {
+    color: #6f29be;
+    font-weight: bold;
     text-align: center; }
-  .tabla .tabla__table th {
-    background-color: #6213ac;
-    color: #fff;
-    text-align: center; }
+  .cachorros .card .card-text {
+    color: #6f29be; }
 
-.tabla .tabla__table--titulo {
-  text-align: center;
-  margin-bottom: 15px;
-  color: #743db3; }
+.tabla {
+  margin: 5px 60px; }
+  .tabla .tabla__table {
+    margin: 10px 10px; }
+    .tabla .tabla__table li {
+      list-style-type: none; }
+    .tabla .tabla__table td {
+      padding: 5px;
+      color: #743db3;
+      text-align: center; }
+    .tabla .tabla__table th {
+      background-color: #6213ac;
+      color: #fff;
+      text-align: center; }
+  .tabla .tabla__table--titulo {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #743db3; }
 
 .acc-banner {
   background-image: url(../img/fondoAcc.jpg);
@@ -693,13 +699,16 @@ ul {
 @media all and (max-width: 426px) {
   header {
     display: flex; }
+    header picture a h1 {
+      margin-left: 0;
+      margin-top: 40px;
+      padding-left: 5px; }
     header nav {
-      flex-direction: column;
       margin-bottom: 20px; }
       header nav .navbar-toggler {
         padding: 0.25rem 0.5rem;
         margin-top: 20px;
-        margin-left: -10px;
+        margin-left: 0px;
         font-size: 1.25rem;
         line-height: 1;
         background-color: #fff;
@@ -716,18 +725,14 @@ ul {
       height: 300px; }
     .seccion .seccion__text--inicio .seccion__text--img-in-02 {
       height: 300px; }
-  .redes-sociales {
-    left: 0%;
-    top: 75%;
-    z-index: 2000; }
-    .redes-sociales ul {
-      list-style: none;
-      display: inline; }
-      .redes-sociales ul li a {
-        position: relative;
-        padding: 10px 30px;
-        opacity: 1;
-        font-size: 30px; }
+  .redes-sociales ul {
+    list-style: none;
+    display: inline; }
+    .redes-sociales ul li a {
+      position: relative;
+      padding: 10px 30px;
+      opacity: 1;
+      font-size: 30px; }
   .carousel {
     height: 200px;
     padding-top: 100px; }
@@ -780,7 +785,9 @@ ul {
         width: 250px;
         height: 180px;
         margin-right: 0px;
-        border-radius: 20px; } }
+        border-radius: 20px; }
+  .tabla {
+    display: none; } }
 
 /*****************hasta aca llega el resp 425px ************************/
 @media all and (max-width: 321px) {
@@ -789,8 +796,9 @@ ul {
     header nav {
       flex-direction: column; }
       header nav picture a h1 {
-        padding-left: 10px;
-        margin-top: -50px; } }
+        padding-left: 60px;
+        margin-top: -50px;
+        width: 70%; } }
 
 /*hasta aca 320*/
 .card {
