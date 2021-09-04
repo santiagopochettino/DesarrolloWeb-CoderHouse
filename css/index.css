@@ -6,6 +6,9 @@
 body {
   font-family: "Roboto bold", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 header {
   height: 25hv;
   width: 100%;
@@ -62,27 +65,35 @@ header {
   position: fixed;
   left: 0;
   top: 200px;
-  z-index: 1000; }
-  .redes-sociales ul {
+  z-index: 1000;
+  display: flex; }
+  .redes-sociales .redes-sociales__lista {
     padding-left: 0;
-    list-style: none; }
-    .redes-sociales ul li a {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+    .redes-sociales .redes-sociales__lista li a {
       display: inline-block;
       color: white;
-      background: linear-gradient(to right, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
+      background: linear-gradient(to top, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
       padding: 20px 10px;
       text-decoration: none;
       box-shadow: 3px 3px 6px #00000029;
       opacity: 1;
       font-size: 35px; }
-    .redes-sociales ul li .fa-phone-alt {
+    .redes-sociales .redes-sociales__lista li .fa-phone-alt {
       font-size: 2.2rem; }
-    .redes-sociales ul li .fa-instagram {
+    .redes-sociales .redes-sociales__lista li .fa-instagram {
       font-size: 2.5rem; }
-    .redes-sociales ul li .fa-whatsapp {
+    .redes-sociales .redes-sociales__lista li .fa-whatsapp {
       font-size: 2.5rem; }
-    .redes-sociales ul li .fa-bone {
+    .redes-sociales .redes-sociales__lista li .fa-bone {
       font-size: 1.75rem; }
+
+body {
+  background-image: url(../img/marco-de-perritos.jpg);
+  height: 400px;
+  background-size: cover; }
 
 .inicio {
   display: flex;
@@ -698,7 +709,8 @@ ul {
 /***hasta aca llega el responsive 768px*/
 @media all and (max-width: 426px) {
   header {
-    display: flex; }
+    display: flex;
+    background-image: linear-gradient(to left, #822bd8 25%, #8e22d6 50%, #d875c1 91%); }
     header picture a h1 {
       margin-left: 0;
       margin-top: 40px;
@@ -725,14 +737,19 @@ ul {
       height: 300px; }
     .seccion .seccion__text--inicio .seccion__text--img-in-02 {
       height: 300px; }
-  .redes-sociales ul {
-    list-style: none;
-    display: inline; }
-    .redes-sociales ul li a {
-      position: relative;
-      padding: 10px 30px;
-      opacity: 1;
-      font-size: 30px; }
+  .redes-sociales {
+    top: 90%;
+    left: 10%; }
+    .redes-sociales .redes-sociales__lista {
+      flex-direction: row;
+      justify-content: center; }
+      .redes-sociales .redes-sociales__lista li {
+        flex-grow: 1; }
+        .redes-sociales .redes-sociales__lista li a {
+          position: relative;
+          padding: 10px 23px;
+          opacity: 1;
+          font-size: 40px; }
   .carousel {
     height: 200px;
     padding-top: 100px; }
@@ -798,7 +815,9 @@ ul {
       header nav picture a h1 {
         padding-left: 60px;
         margin-top: -50px;
-        width: 70%; } }
+        width: 70%; }
+  .redes-sociales {
+    left: 0%; } }
 
 /*hasta aca 320*/
 .card {

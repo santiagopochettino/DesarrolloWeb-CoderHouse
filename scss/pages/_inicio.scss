@@ -1,4 +1,10 @@
 // Inicio
+body {
+  background-image: url(../img/marco-de-perritos.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
 .inicio {
   display: flex;
   flex-flow: column wrap;
