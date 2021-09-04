@@ -1,61 +1,52 @@
 //NOSOTROS.HTML
 
-.nosotros__img {
-  width: 30%;
-  height: 30%;
-  margin-left: 1000px;
+.nosotros {
+  display: flex;
+  justify-content: space-around;
+  background-color: #7e3acc;
+  box-shadow: $sombra;
+
+  .nosotros__info {
+    display: flex;
+    flex-direction: column;
+    color: $colorF;
+    justify-content: center;
+    font-style: italic;
+
+    .linea {
+      border: solid 3px $colorF;
+      margin-left: -20px;
+    }
+
+    .nosotros__info--h3,
+    .nosotros__info--h2 {
+      text-align: center;
+    }
+  }
+
+  .nosotros__img {
+    display: flex;
+    background-image: url(/img/img-dogsilla.jpg);
+    height: 600px;
+    width: 30%;
+    background-size: cover;
+  }
 }
 
-.nosotros__info {
-  width: 60%;
-  margin-top: -580px;
-}
-
-.nosotros__info--parrafo {
-  text-align: left;
-  line-height: 30px;
-  margin-left: 60px;
-  color: $color-estandar;
-  text-transform: uppercase;
-}
-
-.nosotros__info--h2 {
-  text-align: center;
-  color: $color-estandar;
-}
-
-.nosotros__img--logo {
-  background-image: url(../img/marca.jpg);
-  height: 380px;
-  background-size: cover;
-  margin-left: 60px;
-  margin-bottom: 20px;
-}
-
-.linea {
-  margin-left: 60px;
-  border: solid $color-estandar;
-}
-
-/*modal */
-.modal {
-  margin-top: 60px;
-}
-
-.modal-body label {
-  font-weight: bold;
-}
-
-/**fin modal**/
 .ubicacion {
-  height: 600px;
+  display: flex;
+  align-items: center;
+
   .ubicacion__maps {
-    margin-top: 5rem;
+    width: 100%;
+    height: 400px;
+
     .ubicacion__maps--titulo {
       text-align: center;
       font-size: 38px;
-      padding-bottom: 15px;
+
       color: #6f29be;
+      box-shadow: 6px 6px 12px rgb(173, 142, 142);
     }
   }
 }
