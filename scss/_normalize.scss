@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto bold", sans-serif;
+  /* background-image: url(../img/fondo.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: left;*/
 }

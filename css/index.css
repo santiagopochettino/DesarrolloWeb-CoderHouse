@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  font-family: "Roboto bold", sans-serif; }
-
 html {
   scroll-behavior: smooth; }
+
+body {
+  font-family: "Roboto bold", sans-serif;
+  /* background-image: url(../img/fondo.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: left;*/ }
 
 header {
   height: 25hv;
@@ -89,11 +93,6 @@ header {
       font-size: 2.5rem; }
     .redes-sociales .redes-sociales__lista li .fa-bone {
       font-size: 1.75rem; }
-
-body {
-  background-image: url(../img/marco-de-perritos.jpg);
-  height: 400px;
-  background-size: cover; }
 
 .inicio {
   display: flex;
@@ -804,7 +803,48 @@ ul {
         margin-right: 0px;
         border-radius: 20px; }
   .tabla {
-    display: none; } }
+    display: none; }
+  .nosotros__img {
+    width: 100%;
+    height: 50%;
+    margin-left: 0px; }
+  .nosotros__info {
+    width: 60%;
+    margin-top: -580px; }
+  .nosotros__info--parrafo {
+    text-align: left;
+    line-height: 30px;
+    margin-left: 60px;
+    color: #6f29be;
+    text-transform: uppercase; }
+  .nosotros__info--h2 {
+    text-align: center;
+    color: #6f29be; }
+  .nosotros__img--logo {
+    background-image: url(../img/marca.jpg);
+    height: 380px;
+    background-size: cover;
+    margin-left: 60px;
+    margin-bottom: 20px; }
+  .linea {
+    margin-left: 60px;
+    border: solid #6f29be; }
+  /*modal */
+  .modal {
+    margin-top: 60px; }
+  .modal-body label {
+    font-weight: bold; }
+  /**fin modal**/
+  .ubicacion {
+    height: 600px; }
+    .ubicacion .ubicacion__maps {
+      margin-top: 5rem; }
+      .ubicacion .ubicacion__maps .ubicacion__maps--titulo {
+        text-align: center;
+        font-size: 38px;
+        padding-bottom: 15px;
+        color: #6f29be; }
+  /*HASTA ACA*/ }
 
 /*****************hasta aca llega el resp 425px ************************/
 @media all and (max-width: 321px) {
