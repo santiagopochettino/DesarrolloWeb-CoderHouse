@@ -87,7 +87,7 @@ header {
     .redes-sociales .redes-sociales__lista li a {
       display: inline-block;
       color: white;
-      background: linear-gradient(to top, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
+      background: linear-gradient(to left, #822bd8 6%, #8e22d6 33%, #d875c1 56%);
       padding: 20px 10px;
       text-decoration: none;
       box-shadow: 3px 3px 6px #00000029;
@@ -292,21 +292,18 @@ header {
   justify-content: space-around;
   background-color: #7e3acc;
   box-shadow: 0px 6px 12px gray; }
-  .nosotros .nosotros__info {
+  .nosotros__info {
     display: flex;
     flex-direction: column;
     color: #fff;
     justify-content: center;
     font-style: italic; }
-    .nosotros .nosotros__info .linea {
+    .nosotros__info .linea {
       border: solid 3px #fff;
       margin-left: -20px; }
-    .nosotros .nosotros__info .nosotros__info--h3,
-    .nosotros .nosotros__info .nosotros__info--h2 {
-      text-align: center; }
-  .nosotros .nosotros__img {
+  .nosotros__img {
     display: flex;
-    background-image: url(/img/img-dogsilla.jpg);
+    background-image: url(../img/img-dogsilla.jpg);
     height: 600px;
     width: 30%;
     background-size: cover; }
@@ -314,14 +311,14 @@ header {
 .ubicacion {
   display: flex;
   align-items: center; }
-  .ubicacion .ubicacion__maps {
+  .ubicacion__maps {
     width: 100%;
     height: 400px; }
-    .ubicacion .ubicacion__maps .ubicacion__maps--titulo {
+    .ubicacion__maps--titulo {
       text-align: center;
       font-size: 38px;
       color: #6f29be;
-      box-shadow: 6px 6px 12px #ad8e8e; }
+      box-shadow: 0px 6px 12px gray; }
 
 /************************* NAV BAR*************************************/
 picture a {
@@ -748,7 +745,8 @@ ul {
           position: relative;
           padding: 10px 23px;
           opacity: 1;
-          font-size: 40px; }
+          font-size: 40px;
+          background: linear-gradient(to top, #822bd8 6%, #8e22d6 33%, #d875c1 56%); }
   .carousel {
     height: 200px;
     padding-top: 100px; }
@@ -805,19 +803,18 @@ ul {
   .tabla {
     display: none; }
   .nosotros {
-    justify-content: center;
-    margin-bottom: 70px; }
-    .nosotros .nosotros__info {
+    justify-content: center; }
+    .nosotros__info {
       display: flex;
       color: #fff;
       justify-content: center;
       font-style: italic;
       padding: 10px; }
-      .nosotros .nosotros__info .linea {
+      .nosotros__info .linea {
         border: solid 3px #fff;
         margin-left: -20px; }
-      .nosotros .nosotros__info .nosotros__info--h3,
-      .nosotros .nosotros__info .nosotros__info--h2 {
+      .nosotros__info .nosotros__info--h3,
+      .nosotros__info .nosotros__info--h2 {
         text-align: center; }
     .nosotros .nosotros__img {
       display: none; }

@@ -104,6 +104,12 @@
           padding: 10px 23px;
           opacity: 1;
           font-size: 40px;
+          background: linear-gradient(
+            to top,
+            #822bd8 6%,
+            #8e22d6 33%,
+            #d875c1 56%
+          );
         }
       }
     }
@@ -194,9 +200,7 @@
 
   .nosotros {
     justify-content: center;
-    margin-bottom: 70px;
-
-    .nosotros__info {
+    &__info {
       display: flex;
       color: $colorF;
       justify-content: center;
