@@ -7,20 +7,14 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Roboto bold", sans-serif;
-  /* background-image: url(../img/fondo.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: left;*/ }
+  font-family: "Roboto bold", sans-serif; }
 
-/*modal */
 .modal {
   margin-top: 60px; }
 
 .modal-body label {
   font-weight: bold; }
 
-/**fin modal**/
 header {
   height: 25hv;
   width: 100%;
@@ -52,7 +46,7 @@ header {
       header nav ul li a:hover {
         background-color: #fff;
         color: #8e22d6;
-        border-radius: 5px; }
+        border-radius: 40px; }
     header nav ul .contacto-nav {
       text-decoration: none;
       color: #fff;
@@ -67,7 +61,7 @@ header {
 .footer__div {
   background-image: linear-gradient(#c0b2b2, #fff, black);
   height: 50px; }
-  .footer__div .footer__parrafo {
+  .footer__div--parrafo {
     padding-top: 10px;
     font-size: 14px;
     color: #4d4b4b;
@@ -647,7 +641,6 @@ nav li li:hover {
 .carousel-item {
   height: 100%; }
 
-/***bootstrap**/
 .navbar-nav {
   margin-left: 0px; }
 
