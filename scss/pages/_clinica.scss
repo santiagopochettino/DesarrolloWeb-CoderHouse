@@ -1,17 +1,46 @@
 //  CLINICA.HTML
 .clinica {
-  .clinica__banner {
+  &__banner {
     display: flex;
-    background-image: url(../img/img-curita.jpg);
-    height: 300px;
+    background-image: url(../img/cirguia-fondo.jpg);
+    height: 450px;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
+    position: relative;
+    align-items: center;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #020016;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+
+    &--texto {
+      display: flex;
+      text-align: center;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: bold;
+      margin-top: 10rem;
+
+      p {
+        font-size: 23px;
+        padding: 15px 45px;
+        color: #fff;
+      }
+    }
   }
 
-  .clinica__text--cli {
+  &__text--cli {
     color: $color-estandar;
     text-align: center;
     margin: 10px 50px;
+    position: relative;
 
     .clinica__text--titulo {
       padding-bottom: 20px;
@@ -20,12 +49,12 @@
     .clinica__text--parrafo {
       margin: 10px 10px;
     }
-    .clinica__img {
-      background-image: url(../img/vacuna.png);
-      height: 600px;
-      background-size: cover;
-      margin: 15px auto;
-    }
+  }
+  &__img {
+    background-image: url(../img/vacuna.png);
+    height: 600px;
+    background-size: cover;
+    margin: 15px auto;
   }
   ul {
     list-style: none;
