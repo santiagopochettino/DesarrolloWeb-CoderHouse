@@ -74,6 +74,17 @@
       height: 300px;
     }
   }
+
+  .iconos {
+    flex-flow: column nowrap;
+
+    &__imgs {
+      margin: 10px auto;
+      &--h3 {
+        margin-top: 10px;
+      }
+    }
+  }
   .seccion {
     .seccion__text--inicio {
       flex-direction: column;
