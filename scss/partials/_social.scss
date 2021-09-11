@@ -5,13 +5,19 @@
   top: 200px;
   z-index: 1000;
   display: flex;
-  .redes-sociales__lista {
+  &__lista {
     padding-left: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
 
     li {
+      .redes-sociales__lista--tel {
+        border-radius: 0px 15px 0px 0px;
+      }
+      .redes-sociales__lista--hueso {
+        border-radius: 0px 0px 15px 0px;
+      }
       a {
         display: inline-block;
         color: white;
@@ -26,19 +32,19 @@
         box-shadow: 3px 3px 6px #00000029;
         opacity: 1;
         font-size: 35px;
-      }
 
-      .fa-phone-alt {
-        font-size: 2.2rem;
-      }
-      .fa-instagram {
-        font-size: 2.5rem;
-      }
-      .fa-whatsapp {
-        font-size: 2.5rem;
-      }
-      .fa-bone {
-        font-size: 1.75rem;
+        .fa-phone-alt {
+          font-size: 2.2rem;
+        }
+        .fa-instagram {
+          font-size: 2.5rem;
+        }
+        .fa-whatsapp {
+          font-size: 2.5rem;
+        }
+        .fa-bone {
+          font-size: 1.75rem;
+        }
       }
     }
   }
