@@ -31,19 +31,40 @@
     color: $colorF;
     justify-content: center;
     font-style: italic;
+    &--parrafo {
+      .fa-map-marker-alt {
+        font-size: x-large;
+        margin-left: 10px;
+      }
+      .fa-phone-square-alt {
+        font-size: x-large;
+        margin-left: 298px;
+      }
+      .fa-whatsapp {
+        font-size: x-large;
+        margin-left: 260px;
+      }
+      .fa-envelope {
+        font-size: x-large;
+        margin-left: 225px;
+      }
+      .fa-calendar-check {
+        font-size: x-large;
+        margin-left: 180px;
+      }
+    }
 
     .linea {
       border: solid 3px $colorF;
       margin-left: -20px;
     }
-  }
-
-  &__img {
-    display: flex;
-    background-image: url(../img/img-dogsilla.jpg);
-    height: 600px;
-    width: 30%;
-    background-size: cover;
+    &--img {
+      display: flex;
+      background-image: url(../img/img-dogsilla.jpg);
+      height: 600px;
+      width: 30%;
+      background-size: cover;
+    }
   }
 }
 
