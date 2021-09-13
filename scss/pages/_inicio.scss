@@ -2,14 +2,12 @@
 .inicio {
   display: flex;
   flex-flow: column wrap;
-  gap: 1em;
-  .inicio__banner {
+  &__banner {
     background-image: url(../img/banner-in.jpg);
     height: 400px;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: 100%;
-    margin-top: 55px;
   }
 }
 
@@ -32,19 +30,19 @@
 }
 
 .seccion {
-  .seccion__text--inicio {
+  &__text {
     display: flex;
     gap: 1em;
     align-items: center;
     margin: 5px 20px;
     box-shadow: $sombra;
-    .seccion__text--titulo {
+    &--titulo {
       text-align: center;
       font-size: 34px;
       color: $color-estandar;
       margin-bottom: 20px;
     }
-    .seccion__text--parrafo {
+    &--parrafo {
       padding: 5px 5px;
       font-size: 18px;
       margin-left: 40px;
@@ -52,7 +50,7 @@
       word-spacing: 2px;
       line-height: 30px;
     }
-    .seccion__text--img-in-01 {
+    &--img-in-01 {
       background-image: url(../img/in-img01.jpg);
       height: 400px;
       background-size: cover;
@@ -62,7 +60,7 @@
       box-shadow: $sombra;
     }
 
-    .seccion__text--img-in-02 {
+    &--img-in-02 {
       background-image: url(../img/perritos.jpg);
       height: 400px;
       background-size: cover;

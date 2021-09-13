@@ -70,7 +70,7 @@
   }
   // Inicio
   .inicio {
-    .inicio__banner {
+    &__banner {
       height: 300px;
     }
   }
@@ -85,62 +85,80 @@
       }
     }
   }
+
+  //seccion
   .seccion {
-    .seccion__text--inicio {
+    &__text {
       flex-direction: column;
-      .seccion__text--titulo {
-        text-align: center;
+      justify-content: center;
+      margin: 5px 0px;
+      box-shadow: none;
+      &--titulo {
+        font-size: 26px;
+        margin-bottom: 10px;
       }
-      .seccion__text--img-in-01 {
+      &--parrafo {
+        padding: 5px 0px;
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      &--img-in-01 {
         height: 300px;
+        width: 80%;
       }
 
-      .seccion__text--img-in-02 {
-        height: 300px;
+      &--img-in-02 {
+        height: 400px;
+        width: 80%;
       }
     }
   }
+
   //redes sociales
   .redes-sociales {
     top: 90%;
-    left: 10%;
-    .redes-sociales__lista {
+    left: 5%;
+    &__lista {
       flex-direction: row;
       justify-content: center;
-
-      li {
-        flex-grow: 1;
-        a {
-          position: relative;
-          padding: 10px 23px;
-          opacity: 1;
-          font-size: 40px;
-          background: linear-gradient(
-            to top,
-            #822bd8 6%,
-            #8e22d6 33%,
-            #d875c1 56%
-          );
-        }
+      &--tel {
+        border-radius: 15px 0px 0px 15px;
+      }
+      &--hueso {
+        border-radius: 0px 15px 15px 0px;
+      }
+      a {
+        position: relative;
+        padding: 10px 23px;
+        opacity: 1;
+        font-size: 40px;
+        background: linear-gradient(
+          to top,
+          #822bd8 6%,
+          #8e22d6 33%,
+          #d875c1 56%
+        );
       }
     }
   }
   // PELUQUERIA.HTML
   .carousel {
     height: 200px;
-    padding-top: 100px;
   }
-  .carousel-indicators,
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none;
-  }
+
   .peluqueria {
+    &__banner {
+      background-image: url(../img/banner-pelu.jpg);
+      height: 450px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     .peluqueria__text {
       display: flex;
       align-items: center;
       flex-direction: column;
-      .peluqueria__img {
+      .peluqueria__text--img {
         max-width: 100%;
         margin-left: 0;
       }
@@ -156,6 +174,7 @@
 
   .cortes {
     height: 600px;
+    margin-bottom: 10px;
     .cortes__antes-y-despues {
       display: flex;
       flex-direction: column;
@@ -180,7 +199,16 @@
   }
   //  CLINICA.HTML
   .clinica {
-    .clinica__text--cli {
+    &__banner {
+      &--texto {
+        p {
+          font-size: 18px;
+          padding: 0px 0px;
+          margin: 0px 10px;
+        }
+      }
+    }
+    &__text--cli {
       margin: 10px 10px;
     }
   }
