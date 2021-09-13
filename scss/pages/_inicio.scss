@@ -3,11 +3,11 @@
   display: flex;
   flex-flow: column wrap;
   &__banner {
-    background-image: url(../img/banner-in.jpg);
-    height: 400px;
+    background-image: url(../img/banner-ini.jpg);
+    height: 600px;
     background-size: cover;
+
     background-position: top;
-    width: 100%;
   }
 }
 

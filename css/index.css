@@ -104,11 +104,10 @@ header {
   display: flex;
   flex-flow: column wrap; }
   .inicio__banner {
-    background-image: url(../img/banner-in.jpg);
-    height: 400px;
+    background-image: url(../img/banner-ini.jpg);
+    height: 600px;
     background-size: cover;
-    background-position: top;
-    width: 100%; }
+    background-position: top; }
 
 .iconos {
   display: flex;
@@ -791,12 +790,14 @@ ul {
     flex-flow: row wrap; }
   .logo h1 {
     margin-left: 0; }
-  #inicio {
-    flex-flow: row wrap; }
-  .banner {
-    margin-top: 90px; }
-  .text-inicio {
-    flex-flow: row wrap; }
+  .inicio__banner {
+    padding-top: 80px;
+    height: 400px;
+    background-position: center; }
+  .seccion__text {
+    flex-direction: column; }
+  .nosotros__info--img {
+    display: none; }
   .clinica-in {
     align-items: center;
     margin-top: 20px; }
@@ -812,13 +813,13 @@ ul {
     background-image: linear-gradient(to left, #822bd8 25%, #8e22d6 50%, #d875c1 91%); }
     header picture a h1 {
       margin-left: 0;
-      margin-top: 40px;
+      margin-top: 20px;
       padding-left: 5px; }
     header nav {
-      margin-bottom: 20px; }
+      margin-bottom: 0px; }
       header nav .navbar-toggler {
         padding: 0.25rem 0.5rem;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 0px;
         font-size: 1.25rem;
         line-height: 1;
@@ -827,7 +828,9 @@ ul {
         border-radius: 0.25rem;
         transition: box-shadow 0.15s ease-in-out; }
   .inicio__banner {
-    height: 300px; }
+    padding-top: 80px;
+    height: 400px;
+    background-position: center; }
   .iconos {
     flex-flow: column nowrap; }
     .iconos__imgs {

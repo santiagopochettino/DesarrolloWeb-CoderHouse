@@ -9,17 +9,24 @@
   .logo h1 {
     margin-left: 0;
   }
-  //INICIO
-  #inicio {
-    flex-flow: row wrap;
+  // Inicio
+  .inicio {
+    &__banner {
+      padding-top: 80px;
+      height: 400px;
+      background-position: center;
+    }
   }
-  .banner {
-    margin-top: 90px;
+  .seccion {
+    &__text {
+      flex-direction: column;
+    }
+  }
+  //NOSOTROS.HTML
+  .nosotros__info--img {
+    display: none;
   }
 
-  .text-inicio {
-    flex-flow: row wrap;
-  }
   //  CLINICA.HTML
   .clinica-in {
     align-items: center;
@@ -46,17 +53,17 @@
       a {
         h1 {
           margin-left: 0;
-          margin-top: 40px;
+          margin-top: 20px;
           padding-left: 5px;
         }
       }
     }
     nav {
-      margin-bottom: 20px;
+      margin-bottom: 0px;
 
       .navbar-toggler {
         padding: 0.25rem 0.5rem;
-        margin-top: 20px;
+        margin-top: 10px;
 
         margin-left: 0px;
         font-size: 1.25rem;
@@ -69,9 +76,12 @@
     }
   }
   // Inicio
+  // Inicio
   .inicio {
     &__banner {
-      height: 300px;
+      padding-top: 80px;
+      height: 400px;
+      background-position: center;
     }
   }
 
