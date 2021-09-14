@@ -1,2 +1,7 @@
 # DesarrolloWeb-CoderHouse
-Este es el proyecto de la veterinaria Pochettino. Utilizando HTML, CSS, SASS, Bootstrap5.
+
+For creating it, it has been used primarly:
+▲ HTML5
+▲ CSS3
+▲ SASS
+▲ Bootstrap5
