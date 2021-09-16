@@ -253,6 +253,12 @@
     display: none;
   }
   //NOSOTROS.HTML
+  .nos {
+    &__banner {
+      margin-left: 0px;
+      background-size: cover;
+    }
+  }
 
   .nosotros {
     justify-content: center;
@@ -269,6 +275,10 @@
           margin-left: 10px;
         }
         .fa-whatsapp {
+          font-size: large;
+          margin-left: 10px;
+        }
+        .fa-instagram {
           font-size: large;
           margin-left: 10px;
         }

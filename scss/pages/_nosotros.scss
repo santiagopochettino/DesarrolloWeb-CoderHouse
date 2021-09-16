@@ -1,22 +1,9 @@
 //NOSOTROS.HTML
 .nos {
   &__banner {
-    background-image: url(../img/banner-nos.jfif);
-    height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: #020016;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.5;
-      height: 350px;
-    }
+    background-image: url(../img/marca.jpg);
+    height: 295px;
+    margin-left: 45px;
   }
 }
 .nosotros {
@@ -43,6 +30,10 @@
       .fa-whatsapp {
         font-size: x-large;
         margin-left: 260px;
+      }
+      .fa-instagram {
+        font-size: x-large;
+        margin-left: 306px;
       }
       .fa-envelope {
         font-size: x-large;
