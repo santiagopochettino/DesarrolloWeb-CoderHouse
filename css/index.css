@@ -102,8 +102,12 @@ header {
 
 .inicio {
   display: flex;
-  flex-flow: column wrap; }
+  flex-flow: column nowrap; }
   .inicio__banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-image: url(../img/banner-ini.jpg);
     height: 600px;
     background-size: cover;
@@ -111,25 +115,28 @@ header {
     .inicio__banner::before {
       position: absolute;
       content: "";
-      background-color: #020016;
+      background-color: #000;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 0.5; }
+      opacity: 0.7;
+      height: 600px; }
     .inicio__banner a {
       position: relative;
       display: inline-block;
       padding: 15px 20px;
-      margin: 210px 0px 0px 80px;
+      margin: 0px 0px 0px 80px;
       color: #03e9f4;
       font-size: 24px;
       text-decoration: none;
-      text-transform: uppercase;
       overflow: hidden;
       transition: 0.5s;
-      letter-spacing: 4px;
-      -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
+      letter-spacing: 4px; }
+    .inicio__banner a:nth-child(1) {
+      filter: hue-rotate(115deg); }
+    .inicio__banner a:nth-child(2) {
+      filter: hue-rotate(65deg); }
     .inicio__banner a:hover {
       background: #03e9f4;
       color: #fff;
@@ -892,6 +899,8 @@ ul {
     padding-top: 80px;
     height: 400px;
     background-position: center; }
+    .inicio__banner::before {
+      height: 400px; }
   .iconos {
     flex-flow: column nowrap; }
     .iconos__imgs {

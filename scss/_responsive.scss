@@ -72,6 +72,9 @@
       padding-top: 80px;
       height: 400px;
       background-position: center;
+      &::before {
+        height: 400px;
+      }
     }
   }
 

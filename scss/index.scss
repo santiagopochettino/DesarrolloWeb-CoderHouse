@@ -1,11 +1,12 @@
 //Globales
-@import "./variables";
 @import "./normalize";
 
 //partials
+@import "./partials/variables";
 @import "./partials/header";
 @import "./partials/footer";
 @import "./partials/social";
+@import "./partials/mixin";
 
 //paginas
 @import "./pages/inicio";
