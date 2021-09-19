@@ -15,15 +15,17 @@
       left: 0;
       right: 0;
       opacity: 0.7;
+      height: 350px;
     }
 
     &--texto {
       display: flex;
       position: absolute;
       justify-content: center;
-      font-weight: bold;
+
       margin-top: 10rem;
       margin-left: 200px;
+      font-family: "Pacifico", cursive;
 
       p {
         font-size: 25px;

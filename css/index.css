@@ -334,14 +334,15 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.7; }
+    opacity: 0.7;
+    height: 350px; }
   .alimentacion__banner--texto {
     display: flex;
     position: absolute;
     justify-content: center;
-    font-weight: bold;
     margin-top: 10rem;
-    margin-left: 200px; }
+    margin-left: 200px;
+    font-family: "Pacifico", cursive; }
     .alimentacion__banner--texto p {
       font-size: 25px;
       padding: 10px 15px;
@@ -433,19 +434,19 @@ header {
       margin: 10px 20px;
       text-align: justify; }
 
-.cortes .cortes__antes-y-despues {
+.cortes__antes-y-despues {
   display: flex;
   align-items: flex-end;
   height: 45vh;
   margin-left: 60px; }
-  .cortes .cortes__antes-y-despues .cortes__antes-y-despues--parrafo {
+  .cortes__antes-y-despues--parrafo {
     text-align: center;
     color: #6f29be; }
-  .cortes .cortes__antes-y-despues .cortes__antes-y-despues--titulo {
+  .cortes__antes-y-despues--titulo {
     text-align: center;
     margin-left: 60px;
     color: #6f29be; }
-  .cortes .cortes__antes-y-despues .cortes__antes-y-despues--img {
+  .cortes__antes-y-despues--img {
     margin: 10px; }
 
 .nos__banner {
@@ -493,8 +494,7 @@ header {
       background-size: cover; }
 
 .ubicacion {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .ubicacion__maps {
     width: 100%;
     height: 400px; }
@@ -864,12 +864,16 @@ ul {
     display: flex;
     margin-left: 20px;
     flex-flow: row wrap; }
+    nav .navbar-toggler {
+      background-color: #fff; }
   .logo h1 {
     margin-left: 0; }
   .inicio__banner {
     padding-top: 80px;
     height: 400px;
     background-position: center; }
+    .inicio__banner::before {
+      height: 400px; }
   .seccion__text {
     flex-direction: column; }
   .nosotros__info--img {
@@ -896,6 +900,10 @@ ul {
       header nav .navbar-toggler {
         background-color: #fff; }
   .inicio__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
     padding-top: 80px;
     height: 400px;
     background-position: center; }
@@ -923,10 +931,10 @@ ul {
       margin-right: 30px; }
     .seccion__text--img-in-01 {
       height: 300px;
-      width: 80%; }
+      width: 95%; }
     .seccion__text--img-in-02 {
       height: 400px;
-      width: 80%; }
+      width: 100%; }
   .redes-sociales {
     top: 90%;
     left: 5%; }
@@ -954,11 +962,10 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: column; }
-    .peluqueria .peluqueria__text .peluqueria__text--img {
+    .peluqueria .peluqueria__text--img {
       max-width: 100%;
       margin-left: 0; }
-    .peluqueria .peluqueria__text .peluqueria__text--titulo,
-    .peluqueria .peluqueria__text .peluqueria__text--parrafo {
+    .peluqueria .peluqueria__text--titulo, .peluqueria .peluqueria__text--parrafo {
       text-align: center;
       margin-bottom: 10px;
       color: #6f29be;
@@ -966,20 +973,20 @@ ul {
   .cortes {
     height: 600px;
     margin-bottom: 10px; }
-    .cortes .cortes__antes-y-despues {
+    .cortes__antes-y-despues {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       height: 45vh;
       margin-left: 0px; }
-      .cortes .cortes__antes-y-despues .cortes__antes-y-despues--parrafo {
+      .cortes__antes-y-despues--parrafo {
         text-align: center;
         color: #6f29be;
         margin: 0px 20px; }
-      .cortes .cortes__antes-y-despues .cortes__antes-y-despues--titulo {
+      .cortes__antes-y-despues--titulo {
         margin: 0px 20px;
         margin-left: 0px; }
-      .cortes .cortes__antes-y-despues .cortes__antes-y-despues--img {
+      .cortes__antes-y-despues--img {
         display: flex;
         height: 200px; }
   .clinica__banner--texto p {

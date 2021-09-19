@@ -30,22 +30,22 @@
 }
 
 .cortes {
-  .cortes__antes-y-despues {
+  &__antes-y-despues {
     display: flex;
     align-items: flex-end;
     height: 45vh;
     margin-left: 60px;
-    .cortes__antes-y-despues--parrafo {
+    &--parrafo {
       text-align: center;
       color: $color-estandar;
     }
 
-    .cortes__antes-y-despues--titulo {
+    &--titulo {
       text-align: center;
       margin-left: 60px;
       color: $color-estandar;
     }
-    .cortes__antes-y-despues--img {
+    &--img {
       margin: 10px;
     }
   }

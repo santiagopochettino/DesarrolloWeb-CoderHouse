@@ -5,6 +5,9 @@
     display: flex;
     margin-left: 20px;
     flex-flow: row wrap;
+    .navbar-toggler {
+      background-color: #fff;
+    }
   }
   .logo h1 {
     margin-left: 0;
@@ -15,6 +18,9 @@
       padding-top: 80px;
       height: 400px;
       background-position: center;
+      &::before {
+        height: 400px;
+      }
     }
   }
   .seccion {
@@ -69,6 +75,7 @@
   // Inicio
   .inicio {
     &__banner {
+      @include flex(column, center, space-around);
       padding-top: 80px;
       height: 400px;
       background-position: center;
@@ -110,12 +117,12 @@
       }
       &--img-in-01 {
         height: 300px;
-        width: 80%;
+        width: 95%;
       }
 
       &--img-in-02 {
         height: 400px;
-        width: 80%;
+        width: 100%;
       }
     }
   }
@@ -163,12 +170,12 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      .peluqueria__text--img {
+      &--img {
         max-width: 100%;
         margin-left: 0;
       }
-      .peluqueria__text--titulo,
-      .peluqueria__text--parrafo {
+      &--titulo,
+      &--parrafo {
         text-align: center;
         margin-bottom: 10px;
         color: $color-estandar;
@@ -180,23 +187,23 @@
   .cortes {
     height: 600px;
     margin-bottom: 10px;
-    .cortes__antes-y-despues {
+    &__antes-y-despues {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       height: 45vh;
       margin-left: 0px;
-      .cortes__antes-y-despues--parrafo {
+      &--parrafo {
         text-align: center;
         color: $color-estandar;
         margin: 0px 20px;
       }
 
-      .cortes__antes-y-despues--titulo {
+      &--titulo {
         margin: 0px 20px;
         margin-left: 0px;
       }
-      .cortes__antes-y-despues--img {
+      &--img {
         display: flex;
         height: 200px;
       }
