@@ -109,7 +109,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-image: url(../img/banner-ini.jpg);
-    height: 600px;
+    height: 100vh;
     background-size: cover;
     background-position: top; }
     .inicio__banner::before {
@@ -121,7 +121,7 @@ header {
       left: 0;
       right: 0;
       opacity: 0.7;
-      height: 600px; }
+      height: 100vh; }
     .inicio__banner a {
       position: relative;
       display: inline-block;
@@ -436,9 +436,9 @@ header {
 
 .cortes__antes-y-despues {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   height: 45vh;
-  margin-left: 60px; }
+  margin-left: 80px; }
   .cortes__antes-y-despues--parrafo {
     text-align: center;
     color: #6f29be; }
@@ -808,9 +808,6 @@ nav li li:hover {
   font-weight: bold; }
 
 /**fin modal**/
-#ubicacion {
-  height: 600px; }
-
 .maps h2 {
   text-align: center;
   font-size: 38px;
@@ -876,6 +873,8 @@ ul {
       height: 400px; }
   .seccion__text {
     flex-direction: column; }
+  .carousel {
+    height: 420px; }
   .nosotros__info--img {
     display: none; }
   .clinica-in {
@@ -936,8 +935,8 @@ ul {
       height: 400px;
       width: 100%; }
   .redes-sociales {
-    top: 90%;
-    left: 5%; }
+    top: 88%;
+    left: 8%; }
     .redes-sociales__lista {
       flex-direction: row;
       justify-content: center; }
@@ -954,7 +953,6 @@ ul {
   .carousel {
     height: 200px; }
   .peluqueria__banner {
-    background-image: url(../img/banner-pelu.jpg);
     height: 450px;
     background-repeat: no-repeat;
     background-position: center; }
@@ -971,12 +969,12 @@ ul {
       color: #6f29be;
       margin: 0px 20px; }
   .cortes {
-    height: 600px;
+    height: 400px;
     margin-bottom: 10px; }
     .cortes__antes-y-despues {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       height: 45vh;
       margin-left: 0px; }
       .cortes__antes-y-despues--parrafo {
@@ -987,8 +985,7 @@ ul {
         margin: 0px 20px;
         margin-left: 0px; }
       .cortes__antes-y-despues--img {
-        display: flex;
-        height: 200px; }
+        margin: 0; }
   .clinica__banner--texto p {
     font-size: 17px;
     padding: 0px 0px;
@@ -1023,7 +1020,7 @@ ul {
     justify-content: center;
     padding: 20px 20px; }
     .nosotros__info {
-      margin-top: 100px; }
+      margin-top: 20px; }
       .nosotros__info--parrafo .fa-map-marker-alt {
         font-size: large;
         margin-left: 10px; }
@@ -1049,16 +1046,9 @@ ul {
         margin-left: -20px; }
       .nosotros__info--h3, .nosotros__info--h2 {
         text-align: center; }
-  .ubicacion {
-    height: 600px; }
-    .ubicacion .ubicacion__maps {
-      margin-top: 5rem; }
-      .ubicacion .ubicacion__maps .ubicacion__maps--titulo {
-        text-align: center;
-        font-size: 38px;
-        padding-bottom: 15px;
-        color: #6f29be;
-        box-shadow: 6px 6px 12px #ad8e8e; }
+  .ubicacion__maps--titulo {
+    margin-top: -60px;
+    font-size: 28px; }
   /*modal */
   .modal {
     margin-top: 60px; }

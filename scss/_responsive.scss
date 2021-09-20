@@ -28,6 +28,10 @@
       flex-direction: column;
     }
   }
+  //carousel
+  .carousel {
+    height: 420px;
+  }
   //NOSOTROS.HTML
   .nosotros__info--img {
     display: none;
@@ -129,8 +133,8 @@
 
   //redes sociales
   .redes-sociales {
-    top: 90%;
-    left: 5%;
+    top: 88%;
+    left: 8%;
     &__lista {
       flex-direction: row;
       justify-content: center;
@@ -161,7 +165,6 @@
 
   .peluqueria {
     &__banner {
-      background-image: url(../img/banner-pelu.jpg);
       height: 450px;
       background-repeat: no-repeat;
       background-position: center;
@@ -185,12 +188,12 @@
   }
 
   .cortes {
-    height: 600px;
+    height: 400px;
     margin-bottom: 10px;
     &__antes-y-despues {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       height: 45vh;
       margin-left: 0px;
       &--parrafo {
@@ -204,8 +207,7 @@
         margin-left: 0px;
       }
       &--img {
-        display: flex;
-        height: 200px;
+        margin: 0;
       }
     }
   }
@@ -274,7 +276,7 @@
     justify-content: center;
     padding: 20px 20px;
     &__info {
-      margin-top: 100px;
+      margin-top: 20px;
       &--parrafo {
         .fa-map-marker-alt {
           font-size: large;
@@ -317,19 +319,14 @@
   }
 
   .ubicacion {
-    height: 600px;
-
-    .ubicacion__maps {
-      margin-top: 5rem;
-      .ubicacion__maps--titulo {
-        text-align: center;
-        font-size: 38px;
-        padding-bottom: 15px;
-        color: #6f29be;
-        box-shadow: 6px 6px 12px rgb(173, 142, 142);
+    &__maps {
+      &--titulo {
+        margin-top: -60px;
+        font-size: 28px;
       }
     }
   }
+
   /*modal */
   .modal {
     margin-top: 60px;

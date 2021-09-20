@@ -32,14 +32,13 @@
 .cortes {
   &__antes-y-despues {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     height: 45vh;
-    margin-left: 60px;
+    margin-left: 80px;
     &--parrafo {
       text-align: center;
       color: $color-estandar;
     }
-
     &--titulo {
       text-align: center;
       margin-left: 60px;
