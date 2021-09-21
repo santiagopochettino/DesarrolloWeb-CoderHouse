@@ -504,6 +504,17 @@ header {
       color: #6f29be;
       box-shadow: 0px 6px 12px gray; }
 
+.error {
+  height: 1100px; }
+  .error__img {
+    background-image: url(../img/error-404.jpg);
+    height: 150vh;
+    background-size: cover; }
+    .error__img--a {
+      font-size: xx-large;
+      margin-left: 60px;
+      margin-top: 400px; }
+
 /************************* NAV BAR*************************************/
 picture a {
   text-decoration: none;
@@ -1064,7 +1075,15 @@ ul {
         font-size: 38px;
         padding-bottom: 15px;
         color: #6f29be; }
-  /*HASTA ACA*/ }
+  /*HASTA ACA*/
+  .error {
+    height: 500px; }
+    .error__img {
+      height: 35vh;
+      background-position: center; }
+      .error__img--a {
+        margin-left: 80px;
+        margin-top: 400px; } }
 
 /*****************hasta aca llega el resp 425px ************************/
 @media all and (max-width: 321px) {
@@ -1077,7 +1096,14 @@ ul {
         margin-top: -50px;
         width: 70%; }
   .redes-sociales {
-    left: 0%; } }
+    left: 0%; }
+  .error {
+    height: 500px; }
+    .error__img {
+      height: 35vh;
+      background-position: center; }
+      .error__img--a {
+        margin-left: 50px; } }
 
 /*hasta aca 320*/
 .card {

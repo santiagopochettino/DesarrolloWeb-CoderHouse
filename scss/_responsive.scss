@@ -349,6 +349,18 @@
       }
     }
   } /*HASTA ACA*/
+  //404.html
+  .error {
+    height: 500px;
+    &__img {
+      height: 35vh;
+      background-position: center;
+      &--a {
+        margin-left: 80px;
+        margin-top: 400px;
+      }
+    }
+  }
 } /*****************hasta aca llega el resp 425px ************************/
 @media all and(max-width:321px) {
   header {
@@ -370,5 +382,16 @@
   //redes sociales
   .redes-sociales {
     left: 0%;
+  }
+  //404.html
+  .error {
+    height: 500px;
+    &__img {
+      height: 35vh;
+      background-position: center;
+      &--a {
+        margin-left: 50px;
+      }
+    }
   }
 } /*hasta aca 320*/

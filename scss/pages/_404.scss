@@ -1,0 +1,14 @@
+.error {
+  height: 1100px;
+  &__img {
+    background-image: url(../img/error-404.jpg);
+    height: 150vh;
+    background-size: cover;
+
+    &--a {
+      font-size: xx-large;
+      margin-left: 60px;
+      margin-top: 400px;
+    }
+  }
+}
