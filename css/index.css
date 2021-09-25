@@ -980,7 +980,7 @@ ul {
       color: #6f29be;
       margin: 0px 20px; }
   .cortes {
-    height: 400px;
+    height: 600px;
     margin-bottom: 10px; }
     .cortes__antes-y-despues {
       display: flex;
@@ -988,15 +988,13 @@ ul {
       align-items: center;
       height: 45vh;
       margin-left: 0px; }
+      .cortes__antes-y-despues--titulo {
+        margin-left: 10px; }
       .cortes__antes-y-despues--parrafo {
         text-align: center;
         color: #6f29be;
-        margin: 0px 20px; }
-      .cortes__antes-y-despues--titulo {
-        margin: 0px 20px;
-        margin-left: 0px; }
-      .cortes__antes-y-despues--img {
-        margin: 0; }
+        margin-left: 40px;
+        margin-right: 40px; }
   .clinica__banner--texto p {
     font-size: 17px;
     padding: 0px 0px;
@@ -1086,15 +1084,11 @@ ul {
         margin-top: 400px; } }
 
 /*****************hasta aca llega el resp 425px ************************/
+@media all and (max-width: 376px) {
+  .navbar > .container-fluid {
+    flex-wrap: initial; } }
+
 @media all and (max-width: 321px) {
-  header {
-    display: flex; }
-    header nav {
-      flex-direction: column; }
-      header nav picture a h1 {
-        padding-left: 60px;
-        margin-top: -50px;
-        width: 70%; }
   .redes-sociales {
     left: 0%; }
   .error {
@@ -1103,7 +1097,17 @@ ul {
       height: 35vh;
       background-position: center; }
       .error__img--a {
-        margin-left: 50px; } }
+        margin-left: 50px; }
+  .peluqueria__text--titulo {
+    padding-bottom: 10px; }
+  .peluqueria__text--parrafo {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px; }
+  .cortes {
+    height: 850px; }
+  .navbar > .container-fluid {
+    flex-wrap: initial; } }
 
 /*hasta aca 320*/
 .card {

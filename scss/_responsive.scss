@@ -188,7 +188,7 @@
   }
 
   .cortes {
-    height: 400px;
+    height: 600px;
     margin-bottom: 10px;
     &__antes-y-despues {
       display: flex;
@@ -196,18 +196,14 @@
       align-items: center;
       height: 45vh;
       margin-left: 0px;
+      &--titulo {
+        margin-left: 10px;
+      }
       &--parrafo {
         text-align: center;
         color: $color-estandar;
-        margin: 0px 20px;
-      }
-
-      &--titulo {
-        margin: 0px 20px;
-        margin-left: 0px;
-      }
-      &--img {
-        margin: 0;
+        margin-left: 40px;
+        margin-right: 40px;
       }
     }
   }
@@ -362,23 +358,14 @@
     }
   }
 } /*****************hasta aca llega el resp 425px ************************/
-@media all and(max-width:321px) {
-  header {
-    display: flex;
-    nav {
-      flex-direction: column;
-
-      picture {
-        a {
-          h1 {
-            padding-left: 60px;
-            margin-top: -50px;
-            width: 70%;
-          }
-        }
-      }
-    }
+@media all and(max-width:376px) {
+  //bootstrap
+  //bootstrap
+  .navbar > .container-fluid {
+    flex-wrap: initial;
   }
+}
+@media all and(max-width:321px) {
   //redes sociales
   .redes-sociales {
     left: 0%;
@@ -393,5 +380,25 @@
         margin-left: 50px;
       }
     }
+  }
+  //peluqueria
+  .peluqueria {
+    &__text {
+      &--titulo {
+        padding-bottom: 10px;
+      }
+      &--parrafo {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .cortes {
+    height: 850px;
+  }
+  //bootstrap
+  .navbar > .container-fluid {
+    flex-wrap: initial;
   }
 } /*hasta aca 320*/
