@@ -364,6 +364,12 @@
   .navbar > .container-fluid {
     flex-wrap: initial;
   }
+  //nosotros
+  .nos {
+    &__banner {
+      height: 380px;
+    }
+  }
 }
 @media all and(max-width:321px) {
   //redes sociales
@@ -400,5 +406,11 @@
   //bootstrap
   .navbar > .container-fluid {
     flex-wrap: initial;
+  }
+  //nosotros
+  .nos {
+    &__banner {
+      height: 380px;
+    }
   }
 } /*hasta aca 320*/

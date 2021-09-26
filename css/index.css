@@ -1086,7 +1086,9 @@ ul {
 /*****************hasta aca llega el resp 425px ************************/
 @media all and (max-width: 376px) {
   .navbar > .container-fluid {
-    flex-wrap: initial; } }
+    flex-wrap: initial; }
+  .nos__banner {
+    height: 380px; } }
 
 @media all and (max-width: 321px) {
   .redes-sociales {
@@ -1107,7 +1109,9 @@ ul {
   .cortes {
     height: 850px; }
   .navbar > .container-fluid {
-    flex-wrap: initial; } }
+    flex-wrap: initial; }
+  .nos__banner {
+    height: 380px; } }
 
 /*hasta aca 320*/
 .card {
